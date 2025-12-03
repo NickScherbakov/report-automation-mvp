@@ -1,0 +1,32 @@
+# CODEOWNERS - Code Review Assignment
+
+# Default owners for everything in the repo
+* @owner
+
+# Core architecture and infrastructure
+/infrastructure/ @integration-dev @security-auditor
+/.github/ @integration-dev @release-manager
+
+# Source code by component
+/src/connectors/ @feature-dev @integration-dev
+/src/transformation/ @feature-dev @product-architect
+/src/renderer/ @feature-dev
+/src/scheduler/ @feature-dev
+/src/delivery/ @feature-dev @integration-dev
+/src/api/ @feature-dev @product-architect
+
+# Tests and quality
+/tests/ @qa-agent @feature-dev
+
+# Documentation
+/docs/ @product-architect @release-manager
+README.md @product-architect
+
+# Security-sensitive files
+.env.example @security-auditor
+/src/auth/ @security-auditor @feature-dev
+package.json @security-auditor @integration-dev
+
+# Release and deployment
+/scripts/deploy*.sh @release-manager @integration-dev
+CHANGELOG.md @release-manager
