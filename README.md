@@ -2,6 +2,14 @@
 
 > B2B SaaS platform for automated report generation, transformation, and delivery
 
+[![GitHub Pages](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-blue?style=flat&logo=github)](https://OWNER.github.io/report-automation-mvp/)
+
+## 🌐 Live Demo
+
+Check out our landing page: **[View Live Demo →](https://OWNER.github.io/report-automation-mvp/)**
+
+The landing page is automatically deployed to GitHub Pages from the `/site` directory.
+
 ## Overview
 
 Report Automation MVP is a B2B SaaS solution that enables automated report generation from multiple sources (Google Sheets, XLSX) with transformation capabilities and flexible export options (PDF, CSV, HTML).
@@ -127,8 +135,15 @@ report-automation-mvp/
 │   ├── api/              # API documentation
 │   ├── architecture/     # Architecture decisions
 │   └── agents.md         # Agent orchestration docs
+├── site/                 # Landing page (GitHub Pages)
+│   ├── index.html        # Main landing page
+│   ├── styles.css        # Responsive styles
+│   ├── script.js         # Interactive features
+│   └── assets/           # Demo data and assets
 ├── .github/
 │   ├── workflows/
+│   │   ├── ci.yml        # Main CI/CD pipeline
+│   │   └── pages.yml     # GitHub Pages deployment
 │   └── ISSUE_TEMPLATE/
 └── infrastructure/       # IaC and deploy scripts
 ```
