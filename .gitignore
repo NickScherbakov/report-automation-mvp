@@ -67,6 +67,7 @@ artifacts/
 *.csv
 !test-fixtures/**/*.xlsx
 !test-fixtures/**/*.csv
+!site/assets/**/*.csv
 
 # Terraform
 *.tfstate

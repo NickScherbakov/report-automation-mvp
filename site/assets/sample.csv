@@ -1,0 +1,13 @@
+product,revenue,units_sold,region,quarter
+Enterprise Suite,125000,45,North America,Q1
+Enterprise Suite,150000,52,North America,Q2
+Enterprise Suite,175000,61,North America,Q3
+Enterprise Suite,200000,70,North America,Q4
+Professional Plan,85000,340,Europe,Q1
+Professional Plan,95000,380,Europe,Q2
+Professional Plan,110000,425,Europe,Q3
+Professional Plan,125000,475,Europe,Q4
+Starter Package,35000,280,Asia Pacific,Q1
+Starter Package,42000,325,Asia Pacific,Q2
+Starter Package,52000,395,Asia Pacific,Q3
+Starter Package,65000,480,Asia Pacific,Q4
