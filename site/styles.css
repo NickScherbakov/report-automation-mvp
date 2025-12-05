@@ -13,7 +13,111 @@
     --success-color: #10b981;
     --warning-color: #f59e0b;
     --error-color: #ef4444;
-    
+}
+
+/* ============================================
+   1C Theme (Russia, Kazakhstan, CIS)
+   ============================================ */
+[data-theme="1c"] {
+    --primary-color: #1E4D8C;
+    --accent-color: #FFD700;
+    --bg-pale: #FFFDF5;
+    --border-color: #E5DFC5;
+}
+
+[data-theme="1c"] .btn-primary {
+    background: linear-gradient(135deg, #FFD700 0%, #FFC000 100%);
+    color: #1a1a1a;
+    font-weight: 700;
+    border: 2px solid #E5B800;
+    text-shadow: none;
+}
+
+[data-theme="1c"] .btn-primary:hover {
+    background: linear-gradient(135deg, #FFE44D 0%, #FFD700 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+}
+
+[data-theme="1c"] .nav-link-cta {
+    background: linear-gradient(135deg, #FFD700 0%, #FFC000 100%);
+    color: #1a1a1a;
+    font-weight: 700;
+    border: 2px solid #E5B800;
+}
+
+[data-theme="1c"] .nav-link-cta:hover {
+    background: linear-gradient(135deg, #FFE44D 0%, #FFD700 100%);
+    color: #1a1a1a;
+}
+
+[data-theme="1c"] .hero {
+    background: linear-gradient(135deg, #1E4D8C 0%, #2A5FA8 50%, #1E4D8C 100%);
+}
+
+[data-theme="1c"] .cta {
+    background: linear-gradient(135deg, #1E4D8C 0%, #2A5FA8 100%);
+}
+
+[data-theme="1c"] .solution-card:hover,
+[data-theme="1c"] .feature-card:hover,
+[data-theme="1c"] .example-card:hover {
+    border-color: #FFD700;
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.15);
+}
+
+[data-theme="1c"] .step-number {
+    background: linear-gradient(135deg, #FFD700 0%, #FFC000 100%);
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+[data-theme="1c"] .example-badge {
+    background-color: #FFD700;
+    color: #1a1a1a;
+}
+
+[data-theme="1c"] .btn-outline {
+    border-color: #FFD700;
+    color: #FFD700;
+}
+
+[data-theme="1c"] .btn-outline:hover {
+    background-color: #FFD700;
+    color: #1a1a1a;
+}
+
+[data-theme="1c"] .lang-option.active {
+    background: linear-gradient(135deg, #FFD700 0%, #FFC000 100%);
+    color: #1a1a1a;
+}
+
+[data-theme="1c"] .navbar-logo a {
+    color: #1E4D8C;
+}
+
+[data-theme="1c"] .nav-link:hover {
+    color: #1E4D8C;
+    border-bottom-color: #FFD700;
+}
+
+[data-theme="1c"] .section-title {
+    color: #1E4D8C;
+}
+
+[data-theme="1c"] a:hover {
+    color: #1E4D8C;
+}
+
+[data-theme="1c"] .learn-more {
+    color: #1E4D8C;
+}
+
+[data-theme="1c"] .footer {
+    background: linear-gradient(180deg, #1E4D8C 0%, #163A6B 100%);
+}
+
+:root {
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;

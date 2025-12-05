@@ -50,6 +50,8 @@ const i18n = {
         ar: 'AR',
         kk: 'KK'
     },
+    // Languages that use 1C theme (CIS market)
+    cisLangs: ['ru', 'kk'],
 
     async loadTranslation(lang) {
         if (this.translations[lang]) {
@@ -88,6 +90,14 @@ const i18n = {
         const html = document.documentElement;
         html.setAttribute('lang', translation.lang || lang);
         html.setAttribute('dir', translation.dir || 'ltr');
+
+        // Apply 1C theme for CIS languages (Russia, Kazakhstan)
+        if (this.cisLangs.includes(lang)) {
+            html.setAttribute('data-theme', '1c');
+            console.log('Applied 1C theme for CIS market');
+        } else {
+            html.removeAttribute('data-theme');
+        }
 
         // Update all elements with data-i18n attribute
         const elements = queryAll('[data-i18n]');
