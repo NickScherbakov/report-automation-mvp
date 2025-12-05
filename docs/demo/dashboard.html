@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дашборд руководителя | 1С:Управление торговлей 11.5</title>
+    <style>
+        :root {
+            --1c-yellow: #FFCC00;
+            --1c-yellow-light: #FFF8DC;
+            --1c-red: #E31E24;
+            --1c-blue: #1E4D8C;
+            --1c-green: #28A745;
+            --1c-gray: #6C757D;
+            --1c-border: #DEE2E6;
+            --1c-bg: #F8F9FA;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--1c-bg);
+            color: #333;
+            font-size: 14px;
+        }
+
+        /* Header в стиле 1С */
+        .header-1c {
+            background: linear-gradient(180deg, #FFDD44 0%, #FFCC00 100%);
+            padding: 8px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #E5B800;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-1c {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--1c-red);
+            text-shadow: 1px 1px 0 #fff;
+        }
+
+        .header-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .header-subtitle {
+            font-size: 12px;
+            color: #555;
+        }
+
+        .header-user {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+        }
+
+        .user-avatar {
+            width: 32px;
+            height: 32px;
+            background: var(--1c-blue);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Toolbar */
+        .toolbar {
+            background: #fff;
+            padding: 8px 16px;
+            display: flex;
+            gap: 8px;
+            border-bottom: 1px solid var(--1c-border);
+            flex-wrap: wrap;
+        }
+
+        .btn-1c {
+            padding: 6px 12px;
+            border: 1px solid var(--1c-border);
+            background: linear-gradient(180deg, #fff 0%, #f0f0f0 100%);
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s;
+        }
+
+        .btn-1c:hover {
+            background: linear-gradient(180deg, #f8f8f8 0%, #e8e8e8 100%);
+            border-color: #999;
+        }
+
+        .btn-1c.primary {
+            background: var(--1c-yellow);
+            border-color: #E5B800;
+        }
+
+        .btn-1c.primary:hover {
+            background: #FFD633;
+        }
+
+        .period-selector {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-left: auto;
+        }
+
+        .period-selector select {
+            padding: 6px 10px;
+            border: 1px solid var(--1c-border);
+            border-radius: 3px;
+            background: #fff;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 16px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+        }
+
+        /* KPI Cards */
+        .kpi-row {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .kpi-card {
+            background: #fff;
+            border: 1px solid var(--1c-border);
+            border-radius: 4px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .kpi-card.positive { border-left: 4px solid var(--1c-green); }
+        .kpi-card.negative { border-left: 4px solid var(--1c-red); }
+        .kpi-card.neutral { border-left: 4px solid var(--1c-yellow); }
+
+        .kpi-title {
+            font-size: 12px;
+            color: var(--1c-gray);
+            text-transform: uppercase;
+        }
+
+        .kpi-value {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .kpi-change {
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .kpi-change.up { color: var(--1c-green); }
+        .kpi-change.down { color: var(--1c-red); }
+
+        /* Panel */
+        .panel {
+            background: #fff;
+            border: 1px solid var(--1c-border);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .panel-header {
+            background: linear-gradient(180deg, #f8f8f8 0%, #f0f0f0 100%);
+            padding: 10px 14px;
+            font-weight: 600;
+            font-size: 14px;
+            border-bottom: 1px solid var(--1c-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .panel-body {
+            padding: 14px;
+        }
+
+        /* Chart placeholder */
+        .chart-container {
+            height: 200px;
+            position: relative;
+        }
+
+        .chart-bars {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            height: 100%;
+            padding: 10px 0;
+            gap: 8px;
+        }
+
+        .chart-bar {
+            flex: 1;
+            max-width: 40px;
+            background: linear-gradient(180deg, var(--1c-yellow) 0%, #E5B800 100%);
+            border-radius: 3px 3px 0 0;
+            position: relative;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .chart-bar:hover {
+            background: linear-gradient(180deg, #FFD633 0%, var(--1c-yellow) 100%);
+        }
+
+        .chart-bar.accent {
+            background: linear-gradient(180deg, var(--1c-red) 0%, #C91A1F 100%);
+        }
+
+        .chart-bar-label {
+            position: absolute;
+            bottom: -22px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 11px;
+            color: var(--1c-gray);
+            white-space: nowrap;
+        }
+
+        .chart-bar-value {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 11px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        /* Table 1C style */
+        .table-1c {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        .table-1c th {
+            background: linear-gradient(180deg, #f8f8f8 0%, #f0f0f0 100%);
+            padding: 8px 10px;
+            text-align: left;
+            font-weight: 600;
+            border: 1px solid var(--1c-border);
+            white-space: nowrap;
+        }
+
+        .table-1c td {
+            padding: 8px 10px;
+            border: 1px solid var(--1c-border);
+        }
+
+        .table-1c tr:hover {
+            background: var(--1c-yellow-light);
+        }
+
+        .table-1c .num {
+            text-align: right;
+            font-family: 'Consolas', monospace;
+        }
+
+        .table-1c .positive { color: var(--1c-green); }
+        .table-1c .negative { color: var(--1c-red); }
+
+        /* Donut chart */
+        .donut-chart {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+        }
+
+        .donut-legend {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+        }
+
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+        }
+
+        /* Progress bar */
+        .progress-bar {
+            height: 20px;
+            background: #e9ecef;
+            border-radius: 3px;
+            overflow: hidden;
+            margin: 8px 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 11px;
+            font-weight: bold;
+            transition: width 0.5s ease;
+        }
+
+        .progress-fill.green { background: var(--1c-green); }
+        .progress-fill.yellow { background: var(--1c-yellow); color: #333; }
+        .progress-fill.red { background: var(--1c-red); }
+
+        /* Status badge */
+        .status {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        .status.success { background: #d4edda; color: #155724; }
+        .status.warning { background: #fff3cd; color: #856404; }
+        .status.danger { background: #f8d7da; color: #721c24; }
+
+        /* Footer */
+        .footer {
+            padding: 12px 16px;
+            background: #fff;
+            border-top: 1px solid var(--1c-border);
+            font-size: 12px;
+            color: var(--1c-gray);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-in {
+            animation: fadeIn 0.4s ease forwards;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-1c {
+                flex-direction: column;
+                gap: 8px;
+                text-align: center;
+            }
+            
+            .toolbar {
+                justify-content: center;
+            }
+            
+            .period-selector {
+                margin-left: 0;
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .kpi-row {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        /* Back link */
+        .back-link {
+            position: fixed;
+            top: 10px;
+            right: 16px;
+            z-index: 1000;
+            background: rgba(255,255,255,0.9);
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+            color: var(--1c-blue);
+            text-decoration: none;
+            border: 1px solid var(--1c-border);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .back-link:hover {
+            background: var(--1c-yellow);
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html" class="back-link">← На главную</a>
+
+    <!-- Header -->
+    <header class="header-1c">
+        <div class="header-logo">
+            <span class="logo-1c">1С</span>
+            <div>
+                <div class="header-title">Управление торговлей 11.5</div>
+                <div class="header-subtitle">Дашборд руководителя</div>
+            </div>
+        </div>
+        <div class="header-user">
+            <span>Иванов А.П.</span>
+            <div class="user-avatar">АИ</div>
+        </div>
+    </header>
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+        <button class="btn-1c primary" onclick="refreshData()">
+            🔄 Обновить
+        </button>
+        <button class="btn-1c">
+            📊 Отчёты
+        </button>
+        <button class="btn-1c">
+            📋 Экспорт в Excel
+        </button>
+        <button class="btn-1c">
+            🖨️ Печать
+        </button>
+        
+        <div class="period-selector">
+            <span>Период:</span>
+            <select id="periodSelect" onchange="changePeriod()">
+                <option value="today">Сегодня</option>
+                <option value="week">Текущая неделя</option>
+                <option value="month" selected>Текущий месяц</option>
+                <option value="quarter">Текущий квартал</option>
+                <option value="year">Текущий год</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- KPI Row -->
+        <div class="kpi-row">
+            <div class="kpi-card positive animate-in" style="animation-delay: 0.1s">
+                <div class="kpi-title">Выручка</div>
+                <div class="kpi-value" id="kpiRevenue">12.4 млн ₽</div>
+                <div class="kpi-change up">
+                    <span>▲</span> +18.5% к прошлому месяцу
+                </div>
+            </div>
+            <div class="kpi-card positive animate-in" style="animation-delay: 0.15s">
+                <div class="kpi-title">Заказы</div>
+                <div class="kpi-value" id="kpiOrders">847</div>
+                <div class="kpi-change up">
+                    <span>▲</span> +12.3% к прошлому месяцу
+                </div>
+            </div>
+            <div class="kpi-card neutral animate-in" style="animation-delay: 0.2s">
+                <div class="kpi-title">Средний чек</div>
+                <div class="kpi-value" id="kpiAvgCheck">14 640 ₽</div>
+                <div class="kpi-change up">
+                    <span>▲</span> +5.5% к прошлому месяцу
+                </div>
+            </div>
+            <div class="kpi-card negative animate-in" style="animation-delay: 0.25s">
+                <div class="kpi-title">Возвраты</div>
+                <div class="kpi-value" id="kpiReturns">23</div>
+                <div class="kpi-change down">
+                    <span>▼</span> -8.0% к прошлому месяцу
+                </div>
+            </div>
+            <div class="kpi-card positive animate-in" style="animation-delay: 0.3s">
+                <div class="kpi-title">Маржа</div>
+                <div class="kpi-value" id="kpiMargin">28.4%</div>
+                <div class="kpi-change up">
+                    <span>▲</span> +2.1 п.п.
+                </div>
+            </div>
+        </div>
+
+        <!-- Sales Chart -->
+        <div class="panel animate-in" style="animation-delay: 0.35s">
+            <div class="panel-header">
+                📈 Динамика продаж по дням
+                <select style="font-size: 12px; padding: 2px 6px;">
+                    <option>По выручке</option>
+                    <option>По количеству</option>
+                </select>
+            </div>
+            <div class="panel-body">
+                <div class="chart-container">
+                    <div class="chart-bars" id="salesChart">
+                        <!-- Generated by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Products -->
+        <div class="panel animate-in" style="animation-delay: 0.4s">
+            <div class="panel-header">
+                🏆 Топ-5 товаров по выручке
+            </div>
+            <div class="panel-body" style="padding: 0;">
+                <table class="table-1c">
+                    <thead>
+                        <tr>
+                            <th>Товар</th>
+                            <th>Выручка</th>
+                            <th>Кол-во</th>
+                            <th>Доля</th>
+                        </tr>
+                    </thead>
+                    <tbody id="topProductsTable">
+                        <!-- Generated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Plan Execution -->
+        <div class="panel animate-in" style="animation-delay: 0.45s">
+            <div class="panel-header">
+                🎯 Выполнение плана продаж
+            </div>
+            <div class="panel-body">
+                <div style="margin-bottom: 16px;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                        <span>Выручка</span>
+                        <span><strong>12.4 млн</strong> из 15 млн ₽</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill green" style="width: 83%;">83%</div>
+                    </div>
+                </div>
+                <div style="margin-bottom: 16px;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                        <span>Количество заказов</span>
+                        <span><strong>847</strong> из 1000</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill green" style="width: 85%;">85%</div>
+                    </div>
+                </div>
+                <div style="margin-bottom: 16px;">
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                        <span>Новые клиенты</span>
+                        <span><strong>64</strong> из 100</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill yellow" style="width: 64%;">64%</div>
+                    </div>
+                </div>
+                <div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 4px;">
+                        <span>Маржинальность</span>
+                        <span><strong>28.4%</strong> из 25%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill green" style="width: 100%;">113%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sales by Category -->
+        <div class="panel animate-in" style="animation-delay: 0.5s">
+            <div class="panel-header">
+                📦 Продажи по категориям
+            </div>
+            <div class="panel-body">
+                <svg class="donut-chart" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#FFCC00" stroke-width="20" stroke-dasharray="75.4 175.9" stroke-dashoffset="0"/>
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#E31E24" stroke-width="20" stroke-dasharray="50.3 200.0" stroke-dashoffset="-75.4"/>
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#1E4D8C" stroke-width="20" stroke-dasharray="37.7 213.6" stroke-dashoffset="-125.7"/>
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#28A745" stroke-width="20" stroke-dasharray="25.1 226.2" stroke-dashoffset="-163.4"/>
+                    <circle cx="50" cy="50" r="40" fill="none" stroke="#6C757D" stroke-width="20" stroke-dasharray="62.8 188.5" stroke-dashoffset="-188.5"/>
+                    <circle cx="50" cy="50" r="25" fill="white"/>
+                    <text x="50" y="54" text-anchor="middle" font-size="12" font-weight="bold">12.4М</text>
+                </svg>
+                <div class="donut-legend">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #FFCC00"></div>
+                        <span>Электроника — 30% (3.7 млн)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #E31E24"></div>
+                        <span>Бытовая техника — 20% (2.5 млн)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #1E4D8C"></div>
+                        <span>Мебель — 15% (1.9 млн)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #28A745"></div>
+                        <span>Одежда — 10% (1.2 млн)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background: #6C757D"></div>
+                        <span>Прочее — 25% (3.1 млн)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Orders -->
+        <div class="panel animate-in" style="animation-delay: 0.55s; grid-column: 1 / -1;">
+            <div class="panel-header">
+                📋 Последние заказы
+                <button class="btn-1c" style="font-size: 11px; padding: 4px 8px;">Все заказы →</button>
+            </div>
+            <div class="panel-body" style="padding: 0; overflow-x: auto;">
+                <table class="table-1c">
+                    <thead>
+                        <tr>
+                            <th>№ Заказа</th>
+                            <th>Дата</th>
+                            <th>Клиент</th>
+                            <th>Сумма</th>
+                            <th>Статус</th>
+                            <th>Менеджер</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ordersTable">
+                        <!-- Generated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Managers Performance -->
+        <div class="panel animate-in" style="animation-delay: 0.6s">
+            <div class="panel-header">
+                👥 Рейтинг менеджеров
+            </div>
+            <div class="panel-body" style="padding: 0;">
+                <table class="table-1c">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Менеджер</th>
+                            <th>Продажи</th>
+                            <th>План</th>
+                        </tr>
+                    </thead>
+                    <tbody id="managersTable">
+                        <!-- Generated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Alerts -->
+        <div class="panel animate-in" style="animation-delay: 0.65s">
+            <div class="panel-header">
+                ⚠️ Требует внимания
+            </div>
+            <div class="panel-body">
+                <div style="display: flex; flex-direction: column; gap: 12px;">
+                    <div style="padding: 10px; background: #fff3cd; border-radius: 4px; border-left: 4px solid #ffc107;">
+                        <strong>Низкий остаток</strong><br>
+                        <span style="font-size: 12px; color: #666;">5 товаров с остатком менее 10 шт.</span>
+                    </div>
+                    <div style="padding: 10px; background: #f8d7da; border-radius: 4px; border-left: 4px solid #dc3545;">
+                        <strong>Просроченная дебиторка</strong><br>
+                        <span style="font-size: 12px; color: #666;">3 клиента, общая сумма: 245 000 ₽</span>
+                    </div>
+                    <div style="padding: 10px; background: #d4edda; border-radius: 4px; border-left: 4px solid #28a745;">
+                        <strong>Выполнен план</strong><br>
+                        <span style="font-size: 12px; color: #666;">Менеджер Сидоров выполнил план на 115%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <span>© 2025 ReportAuto × 1С:Предприятие | Демонстрационный отчёт</span>
+        <span id="updateTime">Обновлено: --</span>
+    </footer>
+
+    <script>
+        // Sample data
+        const salesData = [
+            { day: '01', value: 380 },
+            { day: '02', value: 420 },
+            { day: '03', value: 350 },
+            { day: '04', value: 480 },
+            { day: '05', value: 520 },
+            { day: '06', value: 180 },
+            { day: '07', value: 150 },
+            { day: '08', value: 440 },
+            { day: '09', value: 510 },
+            { day: '10', value: 490 },
+            { day: '11', value: 560 },
+            { day: '12', value: 620 },
+            { day: '13', value: 210 },
+            { day: '14', value: 190 },
+            { day: '15', value: 580 },
+        ];
+
+        const topProducts = [
+            { name: 'iPhone 15 Pro Max 256GB', revenue: '2 340 000', qty: 45, share: 18.9 },
+            { name: 'MacBook Air M3 13"', revenue: '1 890 000', qty: 21, share: 15.2 },
+            { name: 'Samsung Galaxy S24 Ultra', revenue: '1 456 000', qty: 52, share: 11.7 },
+            { name: 'Sony PlayStation 5', revenue: '987 000', qty: 19, share: 8.0 },
+            { name: 'Dyson V15 Detect', revenue: '756 000', qty: 14, share: 6.1 },
+        ];
+
+        const recentOrders = [
+            { id: 'ЗП-001247', date: '05.12.2025', client: 'ООО "ТехноПром"', sum: '156 800', status: 'success', statusText: 'Отгружен', manager: 'Петров И.' },
+            { id: 'ЗП-001246', date: '05.12.2025', client: 'ИП Козлов А.В.', sum: '23 450', status: 'warning', statusText: 'В сборке', manager: 'Сидоров А.' },
+            { id: 'ЗП-001245', date: '05.12.2025', client: 'АО "СтройМастер"', sum: '89 200', status: 'success', statusText: 'Отгружен', manager: 'Иванова М.' },
+            { id: 'ЗП-001244', date: '04.12.2025', client: 'ООО "Альфа"', sum: '234 100', status: 'warning', statusText: 'Ожидает оплаты', manager: 'Петров И.' },
+            { id: 'ЗП-001243', date: '04.12.2025', client: 'ИП Новиков Д.С.', sum: '12 300', status: 'danger', statusText: 'Отменён', manager: 'Козлова Е.' },
+        ];
+
+        const managers = [
+            { name: 'Сидоров А.Н.', sales: '3 240 000', plan: 115 },
+            { name: 'Петров И.В.', sales: '2 890 000', plan: 102 },
+            { name: 'Иванова М.С.', sales: '2 456 000', plan: 87 },
+            { name: 'Козлова Е.А.', sales: '1 980 000', plan: 70 },
+            { name: 'Новиков Д.П.', sales: '1 834 000', plan: 65 },
+        ];
+
+        // Render functions
+        function renderSalesChart() {
+            const container = document.getElementById('salesChart');
+            const maxValue = Math.max(...salesData.map(d => d.value));
+            
+            container.innerHTML = salesData.map((d, i) => {
+                const height = (d.value / maxValue) * 150;
+                const isWeekend = i % 7 === 5 || i % 7 === 6;
+                return `
+                    <div class="chart-bar ${isWeekend ? '' : 'accent'}" 
+                         style="height: ${height}px;"
+                         title="${d.day}.12: ${d.value} тыс. ₽">
+                        <span class="chart-bar-value">${d.value}</span>
+                        <span class="chart-bar-label">${d.day}</span>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderTopProducts() {
+            const tbody = document.getElementById('topProductsTable');
+            tbody.innerHTML = topProducts.map(p => `
+                <tr>
+                    <td>${p.name}</td>
+                    <td class="num">${p.revenue} ₽</td>
+                    <td class="num">${p.qty}</td>
+                    <td class="num">${p.share}%</td>
+                </tr>
+            `).join('');
+        }
+
+        function renderOrders() {
+            const tbody = document.getElementById('ordersTable');
+            tbody.innerHTML = recentOrders.map(o => `
+                <tr>
+                    <td><a href="#" style="color: var(--1c-blue);">${o.id}</a></td>
+                    <td>${o.date}</td>
+                    <td>${o.client}</td>
+                    <td class="num">${o.sum} ₽</td>
+                    <td><span class="status ${o.status}">${o.statusText}</span></td>
+                    <td>${o.manager}</td>
+                </tr>
+            `).join('');
+        }
+
+        function renderManagers() {
+            const tbody = document.getElementById('managersTable');
+            tbody.innerHTML = managers.map((m, i) => `
+                <tr>
+                    <td>${i + 1}</td>
+                    <td>${m.name}</td>
+                    <td class="num">${m.sales} ₽</td>
+                    <td class="num ${m.plan >= 100 ? 'positive' : m.plan >= 80 ? '' : 'negative'}">${m.plan}%</td>
+                </tr>
+            `).join('');
+        }
+
+        function updateTime() {
+            const now = new Date();
+            const timeStr = now.toLocaleString('ru-RU', {
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+            document.getElementById('updateTime').textContent = 'Обновлено: ' + timeStr;
+        }
+
+        function refreshData() {
+            // Simulate refresh
+            document.querySelectorAll('.kpi-value').forEach(el => {
+                el.style.opacity = '0.5';
+            });
+            
+            setTimeout(() => {
+                document.querySelectorAll('.kpi-value').forEach(el => {
+                    el.style.opacity = '1';
+                });
+                updateTime();
+                alert('Данные успешно обновлены!');
+            }, 500);
+        }
+
+        function changePeriod() {
+            const period = document.getElementById('periodSelect').value;
+            console.log('Period changed to:', period);
+            refreshData();
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            renderSalesChart();
+            renderTopProducts();
+            renderOrders();
+            renderManagers();
+            updateTime();
+        });
+    </script>
+</body>
+</html>
