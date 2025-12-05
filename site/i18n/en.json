@@ -1,0 +1,168 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "meta": {
+    "title": "Report Automation MVP - Intelligent Reporting Solutions",
+    "description": "Streamline your reporting workflow with intelligent automation tools."
+  },
+  "nav": {
+    "solutions": "Solutions",
+    "features": "Features",
+    "workflow": "Workflow",
+    "examples": "Examples",
+    "faq": "FAQ",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "title": "Automate Your Reports in Minutes",
+    "subtitle": "Transform complex reporting processes into simple, automated workflows. Save time, reduce errors, and focus on what matters.",
+    "cta1": "Start Free Trial",
+    "cta2": "See Examples"
+  },
+  "solutions": {
+    "title": "Solutions for Every Need",
+    "subtitle": "Our platform adapts to your specific reporting requirements",
+    "financial": {
+      "title": "Financial Reports",
+      "description": "Automated P&L, balance sheet, and cash flow statement generation with real-time data integration."
+    },
+    "hr": {
+      "title": "HR Analytics",
+      "description": "Employee metrics, payroll reports, and talent analytics delivered automatically every month."
+    },
+    "sales": {
+      "title": "Sales Dashboards",
+      "description": "Real-time sales performance, pipeline analysis, and forecast reports for your sales team."
+    },
+    "custom": {
+      "title": "Custom Reports",
+      "description": "Build any report with our visual builder. No coding required, unlimited possibilities."
+    }
+  },
+  "features": {
+    "title": "Powerful Features",
+    "subtitle": "Everything you need to automate your reporting",
+    "integrations": {
+      "title": "100+ Integrations",
+      "description": "Connect to 1C:Enterprise, Ozon, Wildberries, Yandex.Market, as well as Salesforce, HubSpot, Google Analytics, and more."
+    },
+    "schedule": {
+      "title": "Schedule & Automate",
+      "description": "Set it and forget it. Reports are generated and delivered on your schedule automatically."
+    },
+    "branding": {
+      "title": "Custom Branding",
+      "description": "Add your logo, colors, and branding to make reports reflect your company identity."
+    },
+    "security": {
+      "title": "Enterprise Security",
+      "description": "SOC 2 compliant, end-to-end encryption, and role-based access control for your data."
+    }
+  },
+  "workflow": {
+    "title": "Simple 4-Step Workflow",
+    "subtitle": "Get automated reports up and running in less than an hour",
+    "step1": {
+      "title": "Connect Data",
+      "description": "Link your data sources. We support APIs, databases, and cloud platforms."
+    },
+    "step2": {
+      "title": "Design Report",
+      "description": "Use our drag-and-drop builder to create your perfect report layout."
+    },
+    "step3": {
+      "title": "Set Schedule",
+      "description": "Choose when reports run: daily, weekly, monthly, or on custom triggers."
+    },
+    "step4": {
+      "title": "Deliver & Share",
+      "description": "Reports go directly to inboxes, Slack, or your preferred platform automatically."
+    }
+  },
+  "examples": {
+    "title": "Real-World Examples",
+    "subtitle": "See how companies use ReportAuto to save time and improve decisions",
+    "financial": {
+      "badge": "Finance",
+      "title": "Monthly Financial Summary",
+      "description": "CFO receives consolidated P&L, cash flow, and variance analysis every first of the month at 6 AM.",
+      "link": "View Template →"
+    },
+    "sales": {
+      "badge": "Sales",
+      "title": "Weekly Sales Pipeline",
+      "description": "Sales team gets pipeline updates, win/loss rates, and forecast accuracy every Monday morning.",
+      "link": "View Template →"
+    },
+    "marketing": {
+      "badge": "Marketing",
+      "title": "Campaign Performance Report",
+      "description": "Marketing leaders track multi-channel performance, ROI, and attribution in one comprehensive report.",
+      "link": "View Template →"
+    },
+    "executive": {
+      "badge": "Executive",
+      "title": "Executive Dashboard",
+      "description": "C-suite executives get KPI summaries, key metrics, and business insights updated in real-time.",
+      "link": "View Template →"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Get answers to common questions about ReportAuto",
+    "q1": {
+      "question": "What data sources does ReportAuto support?",
+      "answer": "We support 100+ integrations including 1C:Enterprise, Ozon, Wildberries, Yandex.Market, Salesforce, HubSpot, Google Analytics, Stripe, QuickBooks, and custom APIs. Perfect for Russia & CIS markets. If your data source isn't listed, our API can connect almost anything."
+    },
+    "q2": {
+      "question": "How secure is my data?",
+      "answer": "We maintain SOC 2 Type II certification, use end-to-end encryption, and store all data in AWS with multi-region redundancy. Your data is never shared with third parties and you maintain full control."
+    },
+    "q3": {
+      "question": "Can I customize the report design?",
+      "answer": "Yes, completely! Our visual builder lets you customize fonts, colors, logos, layouts, and more. You can also embed custom CSS for advanced styling and create branded templates for your organization."
+    },
+    "q4": {
+      "question": "What's the typical setup time?",
+      "answer": "Most customers have their first automated report running within 30-60 minutes. Our onboarding team can guide you through setup, and we offer pre-built templates for common report types to get you started faster."
+    }
+  },
+  "cta": {
+    "title": "Ready to Automate Your Reports?",
+    "subtitle": "Join hundreds of companies saving hours every week with intelligent report automation.",
+    "button1": "Start Your Free Trial",
+    "button2": "Schedule a Demo",
+    "note": "No credit card required • 14-day free trial • Cancel anytime"
+  },
+  "footer": {
+    "about": {
+      "title": "About ReportAuto",
+      "aboutUs": "About Us",
+      "blog": "Blog",
+      "careers": "Careers",
+      "press": "Press Kit"
+    },
+    "product": {
+      "title": "Product",
+      "features": "Features",
+      "integrations": "Integrations",
+      "pricing": "Pricing",
+      "docs": "Documentation"
+    },
+    "resources": {
+      "title": "Resources",
+      "help": "Help Center",
+      "api": "API Docs",
+      "community": "Community",
+      "status": "Status Page"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "security": "Security",
+      "gdpr": "GDPR"
+    },
+    "copyright": "© 2025 ReportAuto. All rights reserved."
+  }
+}

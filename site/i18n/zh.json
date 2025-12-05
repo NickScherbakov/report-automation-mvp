@@ -1,0 +1,168 @@
+{
+  "lang": "zh",
+  "dir": "ltr",
+  "meta": {
+    "title": "Report Automation MVP - 智能报表自动化解决方案",
+    "description": "通过智能自动化工具优化您的报表工作流程。"
+  },
+  "nav": {
+    "solutions": "解决方案",
+    "features": "功能特点",
+    "workflow": "工作流程",
+    "examples": "案例展示",
+    "faq": "常见问题",
+    "getStarted": "立即开始"
+  },
+  "hero": {
+    "title": "几分钟内实现报表自动化",
+    "subtitle": "将复杂的报表流程转化为简单的自动化工作流。节省时间，减少错误，专注于重要事务。",
+    "cta1": "免费试用",
+    "cta2": "查看案例"
+  },
+  "solutions": {
+    "title": "满足各种需求的解决方案",
+    "subtitle": "我们的平台适应您的特定报表需求",
+    "financial": {
+      "title": "财务报表",
+      "description": "自动生成损益表、资产负债表和现金流量表，实时数据集成。"
+    },
+    "hr": {
+      "title": "人力资源分析",
+      "description": "员工指标、薪资报表和人才分析每月自动交付。"
+    },
+    "sales": {
+      "title": "销售仪表板",
+      "description": "实时销售业绩、漏斗分析和预测报表，助力您的销售团队。"
+    },
+    "custom": {
+      "title": "自定义报表",
+      "description": "使用可视化构建器创建任何报表。无需编程，可能性无限。"
+    }
+  },
+  "features": {
+    "title": "强大功能",
+    "subtitle": "报表自动化所需的一切",
+    "integrations": {
+      "title": "100+ 集成",
+      "description": "连接1C企业版、Ozon、Wildberries、Yandex.Market，以及Salesforce、HubSpot、Google Analytics等。"
+    },
+    "schedule": {
+      "title": "定时与自动化",
+      "description": "设置后即可忘记。报表按您的计划自动生成和交付。"
+    },
+    "branding": {
+      "title": "自定义品牌",
+      "description": "添加您的标志、颜色和品牌元素，让报表体现公司形象。"
+    },
+    "security": {
+      "title": "企业级安全",
+      "description": "SOC 2合规、端到端加密和基于角色的数据访问控制。"
+    }
+  },
+  "workflow": {
+    "title": "简单4步工作流程",
+    "subtitle": "不到一小时即可启动自动化报表",
+    "step1": {
+      "title": "连接数据",
+      "description": "链接您的数据源。支持API、数据库和云平台。"
+    },
+    "step2": {
+      "title": "设计报表",
+      "description": "使用拖放构建器创建完美的报表布局。"
+    },
+    "step3": {
+      "title": "设置计划",
+      "description": "选择报表运行时间：每日、每周、每月或自定义触发器。"
+    },
+    "step4": {
+      "title": "交付与分享",
+      "description": "报表自动发送到邮箱、Slack或您首选的平台。"
+    }
+  },
+  "examples": {
+    "title": "实际案例",
+    "subtitle": "了解企业如何使用ReportAuto节省时间并改善决策",
+    "financial": {
+      "badge": "财务",
+      "title": "月度财务摘要",
+      "description": "CFO每月1日早6点收到合并损益表、现金流和差异分析。",
+      "link": "查看模板 →"
+    },
+    "sales": {
+      "badge": "销售",
+      "title": "每周销售漏斗",
+      "description": "销售团队每周一早上获取漏斗更新、成单率和预测准确度。",
+      "link": "查看模板 →"
+    },
+    "marketing": {
+      "badge": "市场营销",
+      "title": "营销活动效果报表",
+      "description": "营销负责人在一份综合报表中跟踪多渠道效果、ROI和归因。",
+      "link": "查看模板 →"
+    },
+    "executive": {
+      "badge": "高管",
+      "title": "高管仪表板",
+      "description": "C级高管实时获取KPI摘要、关键指标和业务洞察。",
+      "link": "查看模板 →"
+    }
+  },
+  "faq": {
+    "title": "常见问题",
+    "subtitle": "获取关于ReportAuto的常见问题解答",
+    "q1": {
+      "question": "ReportAuto支持哪些数据源？",
+      "answer": "我们支持100+集成，包括1C企业版、Ozon、Wildberries、Yandex.Market、Salesforce、HubSpot、Google Analytics、Stripe、QuickBooks和自定义API。完美适配俄罗斯和独联体市场。如果您的数据源不在列表中，我们的API几乎可以连接任何系统。"
+    },
+    "q2": {
+      "question": "我的数据安全吗？",
+      "answer": "我们拥有SOC 2 Type II认证，使用端到端加密，所有数据存储在AWS多区域冗余系统中。您的数据永不与第三方共享，您始终保持完全控制。"
+    },
+    "q3": {
+      "question": "可以自定义报表设计吗？",
+      "answer": "完全可以！我们的可视化构建器让您自定义字体、颜色、标志、布局等。您还可以嵌入自定义CSS进行高级样式设计，并为组织创建品牌模板。"
+    },
+    "q4": {
+      "question": "典型的设置时间是多久？",
+      "answer": "大多数客户在30-60分钟内即可运行第一个自动化报表。我们的入职团队将指导您完成设置，我们还提供常见报表类型的预建模板，助您快速上手。"
+    }
+  },
+  "cta": {
+    "title": "准备好自动化您的报表了吗？",
+    "subtitle": "加入数百家每周节省数小时的公司，体验智能报表自动化。",
+    "button1": "开始免费试用",
+    "button2": "预约演示",
+    "note": "无需信用卡 • 14天免费试用 • 随时取消"
+  },
+  "footer": {
+    "about": {
+      "title": "关于ReportAuto",
+      "aboutUs": "关于我们",
+      "blog": "博客",
+      "careers": "招聘",
+      "press": "媒体资料"
+    },
+    "product": {
+      "title": "产品",
+      "features": "功能",
+      "integrations": "集成",
+      "pricing": "定价",
+      "docs": "文档"
+    },
+    "resources": {
+      "title": "资源",
+      "help": "帮助中心",
+      "api": "API文档",
+      "community": "社区",
+      "status": "状态页面"
+    },
+    "legal": {
+      "title": "法律信息",
+      "privacy": "隐私政策",
+      "terms": "服务条款",
+      "security": "安全",
+      "gdpr": "GDPR"
+    },
+    "copyright": "© 2025 ReportAuto. 保留所有权利。"
+  }
+}

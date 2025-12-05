@@ -1,6 +1,6 @@
 /**
  * Report Automation MVP - Landing Page JavaScript
- * Features: Mobile menu, smooth scrolling, scroll animations, lazy loading
+ * Features: Mobile menu, smooth scrolling, scroll animations, lazy loading, i18n
  */
 
 // ============================================================================
@@ -31,6 +31,156 @@ function toggleClass(element, className) {
     if (element) {
         element.classList.toggle(className);
     }
+}
+
+// ============================================================================
+// INTERNATIONALIZATION (i18n)
+// ============================================================================
+
+const i18n = {
+    currentLang: 'en',
+    translations: {},
+    supportedLangs: ['en', 'ru', 'zh', 'es', 'pt', 'ar', 'kk'],
+    langNames: {
+        en: 'EN',
+        ru: 'RU',
+        zh: '中文',
+        es: 'ES',
+        pt: 'PT',
+        ar: 'AR',
+        kk: 'KK'
+    },
+
+    async loadTranslation(lang) {
+        if (this.translations[lang]) {
+            return this.translations[lang];
+        }
+
+        try {
+            const response = await fetch(`i18n/${lang}.json`);
+            if (!response.ok) {
+                throw new Error(`Failed to load ${lang} translation`);
+            }
+            this.translations[lang] = await response.json();
+            return this.translations[lang];
+        } catch (error) {
+            console.error(`Error loading translation for ${lang}:`, error);
+            if (lang !== 'en') {
+                return this.loadTranslation('en');
+            }
+            return null;
+        }
+    },
+
+    getNestedValue(obj, path) {
+        return path.split('.').reduce((current, key) => {
+            return current && current[key] !== undefined ? current[key] : null;
+        }, obj);
+    },
+
+    async applyTranslations(lang) {
+        const translation = await this.loadTranslation(lang);
+        if (!translation) return;
+
+        this.currentLang = lang;
+
+        // Update HTML lang and dir attributes
+        const html = document.documentElement;
+        html.setAttribute('lang', translation.lang || lang);
+        html.setAttribute('dir', translation.dir || 'ltr');
+
+        // Update all elements with data-i18n attribute
+        const elements = queryAll('[data-i18n]');
+        elements.forEach(element => {
+            const key = element.getAttribute('data-i18n');
+            const value = this.getNestedValue(translation, key);
+
+            if (value) {
+                if (element.tagName === 'META') {
+                    element.setAttribute('content', value);
+                } else if (element.tagName === 'TITLE') {
+                    document.title = value;
+                } else {
+                    element.textContent = value;
+                }
+            }
+        });
+
+        // Update language selector display
+        const langCurrent = query('.lang-current');
+        if (langCurrent) {
+            langCurrent.textContent = this.langNames[lang] || lang.toUpperCase();
+        }
+
+        // Update active state in dropdown
+        const langOptions = queryAll('.lang-option');
+        langOptions.forEach(option => {
+            const optionLang = option.getAttribute('data-lang');
+            if (optionLang === lang) {
+                addClass(option, 'active');
+            } else {
+                removeClass(option, 'active');
+            }
+        });
+
+        // Save preference
+        localStorage.setItem('preferredLanguage', lang);
+
+        console.log(`Language switched to: ${lang}`);
+    },
+
+    detectPreferredLanguage() {
+        // Check localStorage first
+        const saved = localStorage.getItem('preferredLanguage');
+        if (saved && this.supportedLangs.includes(saved)) {
+            return saved;
+        }
+
+        // Check browser language
+        const browserLang = navigator.language.split('-')[0];
+        if (this.supportedLangs.includes(browserLang)) {
+            return browserLang;
+        }
+
+        // Default to English
+        return 'en';
+    }
+};
+
+function initLanguageSelector() {
+    const selector = query('.language-selector');
+    const langBtn = query('.lang-btn');
+    const langOptions = queryAll('.lang-option');
+
+    if (!selector || !langBtn) return;
+
+    // Toggle dropdown
+    langBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        toggleClass(selector, 'open');
+    });
+
+    // Handle language selection
+    langOptions.forEach(function(option) {
+        option.addEventListener('click', function() {
+            const lang = this.getAttribute('data-lang');
+            if (lang && i18n.supportedLangs.includes(lang)) {
+                i18n.applyTranslations(lang);
+                removeClass(selector, 'open');
+            }
+        });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!selector.contains(e.target)) {
+            removeClass(selector, 'open');
+        }
+    });
+
+    // Initialize with detected or saved language
+    const preferredLang = i18n.detectPreferredLanguage();
+    i18n.applyTranslations(preferredLang);
 }
 
 // ============================================================================
@@ -201,6 +351,7 @@ function initializeApp() {
         initScrollAnimations();
         initLazyLoading();
         initNavbarShadow();
+        initLanguageSelector();
 
         console.log('Report Automation MVP - Application initialized successfully');
     }

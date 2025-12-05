@@ -1,0 +1,168 @@
+{
+  "lang": "pt",
+  "dir": "ltr",
+  "meta": {
+    "title": "Report Automation MVP - Soluções Inteligentes de Relatórios",
+    "description": "Otimize seu fluxo de trabalho de relatórios com ferramentas de automação inteligente."
+  },
+  "nav": {
+    "solutions": "Soluções",
+    "features": "Recursos",
+    "workflow": "Processo",
+    "examples": "Exemplos",
+    "faq": "FAQ",
+    "getStarted": "Começar"
+  },
+  "hero": {
+    "title": "Automatize seus relatórios em minutos",
+    "subtitle": "Transforme processos complexos de relatórios em fluxos de trabalho automatizados simples. Economize tempo, reduza erros e foque no que importa.",
+    "cta1": "Teste grátis",
+    "cta2": "Ver exemplos"
+  },
+  "solutions": {
+    "title": "Soluções para cada necessidade",
+    "subtitle": "Nossa plataforma se adapta aos seus requisitos específicos de relatórios",
+    "financial": {
+      "title": "Relatórios Financeiros",
+      "description": "Geração automática de DRE, balanço patrimonial e fluxo de caixa com integração de dados em tempo real."
+    },
+    "hr": {
+      "title": "Analytics de RH",
+      "description": "Métricas de funcionários, relatórios de folha de pagamento e analytics de talentos entregues automaticamente todo mês."
+    },
+    "sales": {
+      "title": "Dashboards de Vendas",
+      "description": "Desempenho de vendas em tempo real, análise de funil e relatórios de previsão para sua equipe de vendas."
+    },
+    "custom": {
+      "title": "Relatórios Personalizados",
+      "description": "Crie qualquer relatório com nosso construtor visual. Sem programação, possibilidades ilimitadas."
+    }
+  },
+  "features": {
+    "title": "Recursos Poderosos",
+    "subtitle": "Tudo que você precisa para automatizar seus relatórios",
+    "integrations": {
+      "title": "100+ Integrações",
+      "description": "Conecte-se ao 1C:Enterprise, Ozon, Wildberries, Yandex.Market, além de Salesforce, HubSpot, Google Analytics e mais."
+    },
+    "schedule": {
+      "title": "Agendamento e Automação",
+      "description": "Configure e esqueça. Relatórios são gerados e entregues automaticamente conforme sua programação."
+    },
+    "branding": {
+      "title": "Marca Personalizada",
+      "description": "Adicione seu logo, cores e marca para que os relatórios reflitam a identidade da sua empresa."
+    },
+    "security": {
+      "title": "Segurança Empresarial",
+      "description": "Conformidade SOC 2, criptografia ponta a ponta e controle de acesso baseado em funções para seus dados."
+    }
+  },
+  "workflow": {
+    "title": "Processo simples de 4 etapas",
+    "subtitle": "Tenha relatórios automatizados funcionando em menos de uma hora",
+    "step1": {
+      "title": "Conectar Dados",
+      "description": "Vincule suas fontes de dados. Suportamos APIs, bancos de dados e plataformas em nuvem."
+    },
+    "step2": {
+      "title": "Projetar Relatório",
+      "description": "Use nosso construtor drag-and-drop para criar o layout perfeito do seu relatório."
+    },
+    "step3": {
+      "title": "Definir Agenda",
+      "description": "Escolha quando os relatórios rodam: diário, semanal, mensal ou gatilhos personalizados."
+    },
+    "step4": {
+      "title": "Entregar e Compartilhar",
+      "description": "Relatórios vão direto para e-mails, Slack ou sua plataforma preferida automaticamente."
+    }
+  },
+  "examples": {
+    "title": "Exemplos Reais",
+    "subtitle": "Veja como empresas usam ReportAuto para economizar tempo e melhorar decisões",
+    "financial": {
+      "badge": "Finanças",
+      "title": "Resumo Financeiro Mensal",
+      "description": "O CFO recebe DRE consolidado, fluxo de caixa e análise de variações todo dia primeiro às 6h.",
+      "link": "Ver template →"
+    },
+    "sales": {
+      "badge": "Vendas",
+      "title": "Pipeline de Vendas Semanal",
+      "description": "A equipe de vendas recebe atualizações do pipeline, taxas de conversão e precisão de previsões toda segunda-feira.",
+      "link": "Ver template →"
+    },
+    "marketing": {
+      "badge": "Marketing",
+      "title": "Relatório de Performance de Campanhas",
+      "description": "Líderes de marketing acompanham performance multicanal, ROI e atribuição em um relatório abrangente.",
+      "link": "Ver template →"
+    },
+    "executive": {
+      "badge": "Executivo",
+      "title": "Dashboard Executivo",
+      "description": "Executivos C-level recebem resumos de KPI, métricas-chave e insights de negócio em tempo real.",
+      "link": "Ver template →"
+    }
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Respostas para perguntas comuns sobre ReportAuto",
+    "q1": {
+      "question": "Quais fontes de dados o ReportAuto suporta?",
+      "answer": "Suportamos 100+ integrações incluindo 1C:Enterprise, Ozon, Wildberries, Yandex.Market, Salesforce, HubSpot, Google Analytics, Stripe, QuickBooks e APIs personalizadas. Perfeito para mercados da Rússia e CEI. Se sua fonte não está listada, nossa API pode conectar quase qualquer coisa."
+    },
+    "q2": {
+      "question": "Quão seguros estão meus dados?",
+      "answer": "Mantemos certificação SOC 2 Type II, usamos criptografia ponta a ponta e armazenamos todos os dados na AWS com redundância multi-região. Seus dados nunca são compartilhados com terceiros e você mantém controle total."
+    },
+    "q3": {
+      "question": "Posso personalizar o design do relatório?",
+      "answer": "Sim, completamente! Nosso construtor visual permite personalizar fontes, cores, logos, layouts e mais. Você também pode incorporar CSS personalizado para estilos avançados e criar templates de marca para sua organização."
+    },
+    "q4": {
+      "question": "Qual o tempo típico de configuração?",
+      "answer": "A maioria dos clientes tem seu primeiro relatório automatizado rodando em 30-60 minutos. Nossa equipe de onboarding guiará você na configuração, e oferecemos templates prontos para tipos comuns de relatórios."
+    }
+  },
+  "cta": {
+    "title": "Pronto para automatizar seus relatórios?",
+    "subtitle": "Junte-se a centenas de empresas economizando horas toda semana com automação inteligente de relatórios.",
+    "button1": "Iniciar teste grátis",
+    "button2": "Agendar demo",
+    "note": "Sem cartão de crédito • 14 dias grátis • Cancele quando quiser"
+  },
+  "footer": {
+    "about": {
+      "title": "Sobre ReportAuto",
+      "aboutUs": "Sobre nós",
+      "blog": "Blog",
+      "careers": "Carreiras",
+      "press": "Kit de imprensa"
+    },
+    "product": {
+      "title": "Produto",
+      "features": "Recursos",
+      "integrations": "Integrações",
+      "pricing": "Preços",
+      "docs": "Documentação"
+    },
+    "resources": {
+      "title": "Recursos",
+      "help": "Central de ajuda",
+      "api": "Docs API",
+      "community": "Comunidade",
+      "status": "Status do serviço"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Política de privacidade",
+      "terms": "Termos de serviço",
+      "security": "Segurança",
+      "gdpr": "LGPD"
+    },
+    "copyright": "© 2025 ReportAuto. Todos os direitos reservados."
+  }
+}

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Report Automation MVP - Streamline your reporting workflow with intelligent automation tools.">
+    <meta name="description" content="Report Automation MVP - Streamline your reporting workflow with intelligent automation tools." data-i18n="meta.description">
     <meta name="keywords" content="report automation, business intelligence, workflow automation">
     <meta name="author" content="Report Automation Team">
     
@@ -30,7 +30,7 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     
-    <title>Report Automation MVP - Intelligent Reporting Solutions</title>
+    <title data-i18n="meta.title">Report Automation MVP - Intelligent Reporting Solutions</title>
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -42,13 +42,31 @@
                     <span class="logo-text">ReportAuto</span>
                 </a>
             </div>
+            
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <button class="lang-btn" aria-label="Select language">
+                    <span class="lang-current">EN</span>
+                    <span class="lang-arrow">▼</span>
+                </button>
+                <ul class="lang-dropdown">
+                    <li><button data-lang="en" class="lang-option active">🇺🇸 English</button></li>
+                    <li><button data-lang="ru" class="lang-option">🇷🇺 Русский</button></li>
+                    <li><button data-lang="zh" class="lang-option">🇨🇳 中文</button></li>
+                    <li><button data-lang="es" class="lang-option">🇪🇸 Español</button></li>
+                    <li><button data-lang="pt" class="lang-option">🇧🇷 Português</button></li>
+                    <li><button data-lang="ar" class="lang-option">🇸🇦 العربية</button></li>
+                    <li><button data-lang="kk" class="lang-option">🇰🇿 Қазақша</button></li>
+                </ul>
+            </div>
+            
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#solutions" class="nav-link">Solutions</a></li>
-                <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
-                <li class="nav-item"><a href="#workflow" class="nav-link">Workflow</a></li>
-                <li class="nav-item"><a href="#examples" class="nav-link">Examples</a></li>
-                <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link nav-link-cta">Get Started</a></li>
+                <li class="nav-item"><a href="#solutions" class="nav-link" data-i18n="nav.solutions">Solutions</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link" data-i18n="nav.features">Features</a></li>
+                <li class="nav-item"><a href="#workflow" class="nav-link" data-i18n="nav.workflow">Workflow</a></li>
+                <li class="nav-item"><a href="#examples" class="nav-link" data-i18n="nav.examples">Examples</a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link" data-i18n="nav.faq">FAQ</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link nav-link-cta" data-i18n="nav.getStarted">Get Started</a></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -62,11 +80,11 @@
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-content">
-                <h1 class="hero-title">Automate Your Reports in Minutes</h1>
-                <p class="hero-subtitle">Transform complex reporting processes into simple, automated workflows. Save time, reduce errors, and focus on what matters.</p>
+                <h1 class="hero-title" data-i18n="hero.title">Automate Your Reports in Minutes</h1>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Transform complex reporting processes into simple, automated workflows. Save time, reduce errors, and focus on what matters.</p>
                 <div class="hero-ctas">
-                    <a href="#contact" class="btn btn-primary">Start Free Trial</a>
-                    <a href="#examples" class="btn btn-secondary">See Examples</a>
+                    <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">Start Free Trial</a>
+                    <a href="#examples" class="btn btn-secondary" data-i18n="hero.cta2">See Examples</a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -87,28 +105,28 @@
     <!-- Solutions Section -->
     <section class="solutions" id="solutions">
         <div class="container">
-            <h2 class="section-title">Solutions for Every Need</h2>
-            <p class="section-subtitle">Our platform adapts to your specific reporting requirements</p>
+            <h2 class="section-title" data-i18n="solutions.title">Solutions for Every Need</h2>
+            <p class="section-subtitle" data-i18n="solutions.subtitle">Our platform adapts to your specific reporting requirements</p>
             <div class="solutions-grid">
                 <article class="solution-card">
                     <div class="solution-icon">📈</div>
-                    <h3>Financial Reports</h3>
-                    <p>Automated P&L, balance sheet, and cash flow statement generation with real-time data integration.</p>
+                    <h3 data-i18n="solutions.financial.title">Financial Reports</h3>
+                    <p data-i18n="solutions.financial.description">Automated P&L, balance sheet, and cash flow statement generation with real-time data integration.</p>
                 </article>
                 <article class="solution-card">
                     <div class="solution-icon">👥</div>
-                    <h3>HR Analytics</h3>
-                    <p>Employee metrics, payroll reports, and talent analytics delivered automatically every month.</p>
+                    <h3 data-i18n="solutions.hr.title">HR Analytics</h3>
+                    <p data-i18n="solutions.hr.description">Employee metrics, payroll reports, and talent analytics delivered automatically every month.</p>
                 </article>
                 <article class="solution-card">
                     <div class="solution-icon">📊</div>
-                    <h3>Sales Dashboards</h3>
-                    <p>Real-time sales performance, pipeline analysis, and forecast reports for your sales team.</p>
+                    <h3 data-i18n="solutions.sales.title">Sales Dashboards</h3>
+                    <p data-i18n="solutions.sales.description">Real-time sales performance, pipeline analysis, and forecast reports for your sales team.</p>
                 </article>
                 <article class="solution-card">
                     <div class="solution-icon">⚙️</div>
-                    <h3>Custom Reports</h3>
-                    <p>Build any report with our visual builder. No coding required, unlimited possibilities.</p>
+                    <h3 data-i18n="solutions.custom.title">Custom Reports</h3>
+                    <p data-i18n="solutions.custom.description">Build any report with our visual builder. No coding required, unlimited possibilities.</p>
                 </article>
             </div>
         </div>
@@ -117,36 +135,36 @@
     <!-- Features Section -->
     <section class="features" id="features">
         <div class="container">
-            <h2 class="section-title">Powerful Features</h2>
-            <p class="section-subtitle">Everything you need to automate your reporting</p>
+            <h2 class="section-title" data-i18n="features.title">Powerful Features</h2>
+            <p class="section-subtitle" data-i18n="features.subtitle">Everything you need to automate your reporting</p>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-header">
                         <div class="feature-icon">🔌</div>
-                        <h3>100+ Integrations</h3>
+                        <h3 data-i18n="features.integrations.title">100+ Integrations</h3>
                     </div>
-                    <p>Connect to 1C:Enterprise, Ozon, Wildberries, Yandex.Market, as well as Salesforce, HubSpot, Google Analytics, and more.</p>
+                    <p data-i18n="features.integrations.description">Connect to 1C:Enterprise, Ozon, Wildberries, Yandex.Market, as well as Salesforce, HubSpot, Google Analytics, and more.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-header">
                         <div class="feature-icon">⏱️</div>
-                        <h3>Schedule & Automate</h3>
+                        <h3 data-i18n="features.schedule.title">Schedule & Automate</h3>
                     </div>
-                    <p>Set it and forget it. Reports are generated and delivered on your schedule automatically.</p>
+                    <p data-i18n="features.schedule.description">Set it and forget it. Reports are generated and delivered on your schedule automatically.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-header">
                         <div class="feature-icon">🎨</div>
-                        <h3>Custom Branding</h3>
+                        <h3 data-i18n="features.branding.title">Custom Branding</h3>
                     </div>
-                    <p>Add your logo, colors, and branding to make reports reflect your company identity.</p>
+                    <p data-i18n="features.branding.description">Add your logo, colors, and branding to make reports reflect your company identity.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-header">
                         <div class="feature-icon">🔒</div>
-                        <h3>Enterprise Security</h3>
+                        <h3 data-i18n="features.security.title">Enterprise Security</h3>
                     </div>
-                    <p>SOC 2 compliant, end-to-end encryption, and role-based access control for your data.</p>
+                    <p data-i18n="features.security.description">SOC 2 compliant, end-to-end encryption, and role-based access control for your data.</p>
                 </div>
             </div>
         </div>
@@ -155,31 +173,31 @@
     <!-- Workflow Section -->
     <section class="workflow" id="workflow">
         <div class="container">
-            <h2 class="section-title">Simple 4-Step Workflow</h2>
-            <p class="section-subtitle">Get automated reports up and running in less than an hour</p>
+            <h2 class="section-title" data-i18n="workflow.title">Simple 4-Step Workflow</h2>
+            <p class="section-subtitle" data-i18n="workflow.subtitle">Get automated reports up and running in less than an hour</p>
             <div class="workflow-steps">
                 <div class="workflow-step">
                     <div class="step-number">1</div>
-                    <h3>Connect Data</h3>
-                    <p>Link your data sources. We support APIs, databases, and cloud platforms.</p>
+                    <h3 data-i18n="workflow.step1.title">Connect Data</h3>
+                    <p data-i18n="workflow.step1.description">Link your data sources. We support APIs, databases, and cloud platforms.</p>
                 </div>
                 <div class="workflow-arrow">→</div>
                 <div class="workflow-step">
                     <div class="step-number">2</div>
-                    <h3>Design Report</h3>
-                    <p>Use our drag-and-drop builder to create your perfect report layout.</p>
+                    <h3 data-i18n="workflow.step2.title">Design Report</h3>
+                    <p data-i18n="workflow.step2.description">Use our drag-and-drop builder to create your perfect report layout.</p>
                 </div>
                 <div class="workflow-arrow">→</div>
                 <div class="workflow-step">
                     <div class="step-number">3</div>
-                    <h3>Set Schedule</h3>
-                    <p>Choose when reports run: daily, weekly, monthly, or on custom triggers.</p>
+                    <h3 data-i18n="workflow.step3.title">Set Schedule</h3>
+                    <p data-i18n="workflow.step3.description">Choose when reports run: daily, weekly, monthly, or on custom triggers.</p>
                 </div>
                 <div class="workflow-arrow">→</div>
                 <div class="workflow-step">
                     <div class="step-number">4</div>
-                    <h3>Deliver & Share</h3>
-                    <p>Reports go directly to inboxes, Slack, or your preferred platform automatically.</p>
+                    <h3 data-i18n="workflow.step4.title">Deliver & Share</h3>
+                    <p data-i18n="workflow.step4.description">Reports go directly to inboxes, Slack, or your preferred platform automatically.</p>
                 </div>
             </div>
         </div>
@@ -188,32 +206,32 @@
     <!-- Examples Section -->
     <section class="examples" id="examples">
         <div class="container">
-            <h2 class="section-title">Real-World Examples</h2>
-            <p class="section-subtitle">See how companies use ReportAuto to save time and improve decisions</p>
+            <h2 class="section-title" data-i18n="examples.title">Real-World Examples</h2>
+            <p class="section-subtitle" data-i18n="examples.subtitle">See how companies use ReportAuto to save time and improve decisions</p>
             <div class="examples-grid">
                 <div class="example-card">
-                    <div class="example-badge">Finance</div>
-                    <h3>Monthly Financial Summary</h3>
-                    <p>CFO receives consolidated P&L, cash flow, and variance analysis every first of the month at 6 AM.</p>
-                    <a href="#" class="learn-more">View Template →</a>
+                    <div class="example-badge" data-i18n="examples.financial.badge">Finance</div>
+                    <h3 data-i18n="examples.financial.title">Monthly Financial Summary</h3>
+                    <p data-i18n="examples.financial.description">CFO receives consolidated P&L, cash flow, and variance analysis every first of the month at 6 AM.</p>
+                    <a href="#" class="learn-more" data-i18n="examples.financial.link">View Template →</a>
                 </div>
                 <div class="example-card">
-                    <div class="example-badge">Sales</div>
-                    <h3>Weekly Sales Pipeline</h3>
-                    <p>Sales team gets pipeline updates, win/loss rates, and forecast accuracy every Monday morning.</p>
-                    <a href="#" class="learn-more">View Template →</a>
+                    <div class="example-badge" data-i18n="examples.sales.badge">Sales</div>
+                    <h3 data-i18n="examples.sales.title">Weekly Sales Pipeline</h3>
+                    <p data-i18n="examples.sales.description">Sales team gets pipeline updates, win/loss rates, and forecast accuracy every Monday morning.</p>
+                    <a href="#" class="learn-more" data-i18n="examples.sales.link">View Template →</a>
                 </div>
                 <div class="example-card">
-                    <div class="example-badge">Marketing</div>
-                    <h3>Campaign Performance Report</h3>
-                    <p>Marketing leaders track multi-channel performance, ROI, and attribution in one comprehensive report.</p>
-                    <a href="#" class="learn-more">View Template →</a>
+                    <div class="example-badge" data-i18n="examples.marketing.badge">Marketing</div>
+                    <h3 data-i18n="examples.marketing.title">Campaign Performance Report</h3>
+                    <p data-i18n="examples.marketing.description">Marketing leaders track multi-channel performance, ROI, and attribution in one comprehensive report.</p>
+                    <a href="#" class="learn-more" data-i18n="examples.marketing.link">View Template →</a>
                 </div>
                 <div class="example-card">
-                    <div class="example-badge">Executive</div>
-                    <h3>Executive Dashboard</h3>
-                    <p>C-suite executives get KPI summaries, key metrics, and business insights updated in real-time.</p>
-                    <a href="#" class="learn-more">View Template →</a>
+                    <div class="example-badge" data-i18n="examples.executive.badge">Executive</div>
+                    <h3 data-i18n="examples.executive.title">Executive Dashboard</h3>
+                    <p data-i18n="examples.executive.description">C-suite executives get KPI summaries, key metrics, and business insights updated in real-time.</p>
+                    <a href="#" class="learn-more" data-i18n="examples.executive.link">View Template →</a>
                 </div>
             </div>
         </div>
@@ -222,43 +240,43 @@
     <!-- FAQ Section -->
     <section class="faq" id="faq">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <p class="section-subtitle">Get answers to common questions about ReportAuto</p>
+            <h2 class="section-title" data-i18n="faq.title">Frequently Asked Questions</h2>
+            <p class="section-subtitle" data-i18n="faq.subtitle">Get answers to common questions about ReportAuto</p>
             <div class="faq-container">
                 <details class="faq-item">
                     <summary class="faq-question">
-                        <span>What data sources does ReportAuto support?</span>
+                        <span data-i18n="faq.q1.question">What data sources does ReportAuto support?</span>
                         <span class="faq-toggle">+</span>
                     </summary>
                     <div class="faq-answer">
-                        <p>We support 100+ integrations including 1C:Enterprise, Ozon, Wildberries, Yandex.Market, Salesforce, HubSpot, Google Analytics, Stripe, QuickBooks, and custom APIs. Perfect for Russia & CIS markets. If your data source isn't listed, our API can connect almost anything.</p>
+                        <p data-i18n="faq.q1.answer">We support 100+ integrations including 1C:Enterprise, Ozon, Wildberries, Yandex.Market, Salesforce, HubSpot, Google Analytics, Stripe, QuickBooks, and custom APIs. Perfect for Russia & CIS markets. If your data source isn't listed, our API can connect almost anything.</p>
                     </div>
                 </details>
                 <details class="faq-item">
                     <summary class="faq-question">
-                        <span>How secure is my data?</span>
+                        <span data-i18n="faq.q2.question">How secure is my data?</span>
                         <span class="faq-toggle">+</span>
                     </summary>
                     <div class="faq-answer">
-                        <p>We maintain SOC 2 Type II certification, use end-to-end encryption, and store all data in AWS with multi-region redundancy. Your data is never shared with third parties and you maintain full control.</p>
+                        <p data-i18n="faq.q2.answer">We maintain SOC 2 Type II certification, use end-to-end encryption, and store all data in AWS with multi-region redundancy. Your data is never shared with third parties and you maintain full control.</p>
                     </div>
                 </details>
                 <details class="faq-item">
                     <summary class="faq-question">
-                        <span>Can I customize the report design?</span>
+                        <span data-i18n="faq.q3.question">Can I customize the report design?</span>
                         <span class="faq-toggle">+</span>
                     </summary>
                     <div class="faq-answer">
-                        <p>Yes, completely! Our visual builder lets you customize fonts, colors, logos, layouts, and more. You can also embed custom CSS for advanced styling and create branded templates for your organization.</p>
+                        <p data-i18n="faq.q3.answer">Yes, completely! Our visual builder lets you customize fonts, colors, logos, layouts, and more. You can also embed custom CSS for advanced styling and create branded templates for your organization.</p>
                     </div>
                 </details>
                 <details class="faq-item">
                     <summary class="faq-question">
-                        <span>What's the typical setup time?</span>
+                        <span data-i18n="faq.q4.question">What's the typical setup time?</span>
                         <span class="faq-toggle">+</span>
                     </summary>
                     <div class="faq-answer">
-                        <p>Most customers have their first automated report running within 30-60 minutes. Our onboarding team can guide you through setup, and we offer pre-built templates for common report types to get you started faster.</p>
+                        <p data-i18n="faq.q4.answer">Most customers have their first automated report running within 30-60 minutes. Our onboarding team can guide you through setup, and we offer pre-built templates for common report types to get you started faster.</p>
                     </div>
                 </details>
             </div>
@@ -269,13 +287,13 @@
     <section class="cta" id="contact">
         <div class="container">
             <div class="cta-content">
-                <h2>Ready to Automate Your Reports?</h2>
-                <p>Join hundreds of companies saving hours every week with intelligent report automation.</p>
+                <h2 data-i18n="cta.title">Ready to Automate Your Reports?</h2>
+                <p data-i18n="cta.subtitle">Join hundreds of companies saving hours every week with intelligent report automation.</p>
                 <div class="cta-buttons">
-                    <a href="#" class="btn btn-primary btn-large">Start Your Free Trial</a>
-                    <a href="#" class="btn btn-outline btn-large">Schedule a Demo</a>
+                    <a href="#" class="btn btn-primary btn-large" data-i18n="cta.button1">Start Your Free Trial</a>
+                    <a href="#" class="btn btn-outline btn-large" data-i18n="cta.button2">Schedule a Demo</a>
                 </div>
-                <p class="cta-note">No credit card required • 14-day free trial • Cancel anytime</p>
+                <p class="cta-note" data-i18n="cta.note">No credit card required • 14-day free trial • Cancel anytime</p>
             </div>
         </div>
     </section>
@@ -285,45 +303,45 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-column">
-                    <h4>About ReportAuto</h4>
+                    <h4 data-i18n="footer.about.title">About ReportAuto</h4>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Press Kit</a></li>
+                        <li><a href="#" data-i18n="footer.about.aboutUs">About Us</a></li>
+                        <li><a href="#" data-i18n="footer.about.blog">Blog</a></li>
+                        <li><a href="#" data-i18n="footer.about.careers">Careers</a></li>
+                        <li><a href="#" data-i18n="footer.about.press">Press Kit</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h4>Product</h4>
+                    <h4 data-i18n="footer.product.title">Product</h4>
                     <ul>
-                        <li><a href="#">Features</a></li>
-                        <li><a href="#">Integrations</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#" data-i18n="footer.product.features">Features</a></li>
+                        <li><a href="#" data-i18n="footer.product.integrations">Integrations</a></li>
+                        <li><a href="#" data-i18n="footer.product.pricing">Pricing</a></li>
+                        <li><a href="#" data-i18n="footer.product.docs">Documentation</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h4>Resources</h4>
+                    <h4 data-i18n="footer.resources.title">Resources</h4>
                     <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">API Docs</a></li>
-                        <li><a href="#">Community</a></li>
-                        <li><a href="#">Status Page</a></li>
+                        <li><a href="#" data-i18n="footer.resources.help">Help Center</a></li>
+                        <li><a href="#" data-i18n="footer.resources.api">API Docs</a></li>
+                        <li><a href="#" data-i18n="footer.resources.community">Community</a></li>
+                        <li><a href="#" data-i18n="footer.resources.status">Status Page</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h4>Legal</h4>
+                    <h4 data-i18n="footer.legal.title">Legal</h4>
                     <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Security</a></li>
-                        <li><a href="#">GDPR</a></li>
+                        <li><a href="#" data-i18n="footer.legal.privacy">Privacy Policy</a></li>
+                        <li><a href="#" data-i18n="footer.legal.terms">Terms of Service</a></li>
+                        <li><a href="#" data-i18n="footer.legal.security">Security</a></li>
+                        <li><a href="#" data-i18n="footer.legal.gdpr">GDPR</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-divider"></div>
             <div class="footer-bottom">
-                <p>&copy; 2025 ReportAuto. All rights reserved.</p>
+                <p data-i18n="footer.copyright">&copy; 2025 ReportAuto. All rights reserved.</p>
                 <div class="footer-social">
                     <a href="#" aria-label="Twitter">𝕏</a>
                     <a href="#" aria-label="LinkedIn">in</a>
