@@ -2,13 +2,13 @@
 
 > B2B SaaS platform for automated report generation, transformation, and delivery
 
-[![GitHub Pages](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-blue?style=flat&logo=github)](https://NickScherbakov.github.io/report-automation-mvp/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-blue?style=flat&logo=github)](https://nopikreport.com)
 
 ## 🌐 Live Demo
 
-Check out our landing page: **[View Live Demo →](https://NickScherbakov.github.io/report-automation-mvp/)**
+Check out our landing page: **[nopikreport.com →](https://nopikreport.com)**
 
-The landing page is automatically deployed to GitHub Pages from the `/site` directory.
+The landing page is automatically deployed to GitHub Pages from the `/docs` directory with a custom domain.
 
 ## Overview
 

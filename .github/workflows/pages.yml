@@ -1,5 +1,5 @@
 # GitHub Pages Deployment Workflow
-# Автоматически публикует лэндинг из /site на GitHub Pages
+# Автоматически публикует лендинг из /docs на GitHub Pages
 
 name: Deploy Landing Page to GitHub Pages
 
