@@ -1,83 +1,126 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 350" style="filter: drop-shadow(0 10px 30px rgba(0,0,0,0.15));">
-  <!-- Рыжий пушистый зверёк Nopik для hero-секции -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" style="filter: drop-shadow(0 15px 35px rgba(0,0,0,0.2));">
+  <!-- Весёлый Nopik со вторым изображения - с большой улыбкой -->
   
-  <!-- Хвост (волнистый) -->
-  <path d="M 200 280 Q 240 260 250 200 Q 255 150 240 120" stroke="#C65D34" stroke-width="35" fill="none" stroke-linecap="round"/>
+  <!-- Хвост (волнистый, как лента) -->
+  <path d="M 220 320 Q 260 300 280 240 Q 295 180 275 120 Q 265 80 240 60" 
+        stroke="#C65D34" stroke-width="40" fill="none" stroke-linecap="round"/>
   
   <!-- Задние лапы -->
-  <ellipse cx="140" cy="310" rx="28" ry="35" fill="#C65D34"/>
-  <ellipse cx="140" cy="320" rx="20" ry="15" fill="#8B4534"/>
-  <ellipse cx="200" cy="310" rx="28" ry="35" fill="#C65D34"/>
-  <ellipse cx="200" cy="320" rx="20" ry="15" fill="#8B4534"/>
+  <g>
+    <!-- Левая задняя лапа -->
+    <ellipse cx="130" cy="340" rx="35" ry="45" fill="#C65D34"/>
+    <ellipse cx="130" cy="360" rx="25" ry="20" fill="#8B4534"/>
+    <!-- Пальцы -->
+    <ellipse cx="115" cy="375" rx="8" ry="12" fill="#8B4534"/>
+    <ellipse cx="130" cy="378" rx="8" ry="12" fill="#8B4534"/>
+    <ellipse cx="145" cy="375" rx="8" ry="12" fill="#8B4534"/>
+    
+    <!-- Правая задняя лапа -->
+    <ellipse cx="210" cy="340" rx="35" ry="45" fill="#C65D34"/>
+    <ellipse cx="210" cy="360" rx="25" ry="20" fill="#8B4534"/>
+    <!-- Пальцы -->
+    <ellipse cx="195" cy="375" rx="8" ry="12" fill="#8B4534"/>
+    <ellipse cx="210" cy="378" rx="8" ry="12" fill="#8B4534"/>
+    <ellipse cx="225" cy="375" rx="8" ry="12" fill="#8B4534"/>
+  </g>
   
   <!-- Туловище -->
-  <ellipse cx="170" cy="220" rx="65" ry="90" fill="#C65D34"/>
+  <ellipse cx="170" cy="240" rx="75" ry="110" fill="#C65D34"/>
   
   <!-- Живот (светлый) -->
-  <ellipse cx="170" cy="240" rx="40" ry="60" fill="#E8A88A"/>
+  <ellipse cx="170" cy="260" rx="48" ry="75" fill="#E8A88A"/>
   
-  <!-- Сердечко на груди -->
-  <g transform="translate(170, 200)">
-    <path d="M -12 -5 C -12 -12 -6 -18 0 -18 C 6 -18 12 -12 12 -5 C 12 5 0 15 0 15 C 0 15 -12 5 -12 -5" fill="#E31E24"/>
+  <!-- Сердечко на груди (большое красное) -->
+  <g transform="translate(170, 210)">
+    <path d="M -18 -8 C -18 -18 -8 -26 0 -26 C 8 -26 18 -18 18 -8 C 18 8 0 25 0 25 C 0 25 -18 8 -18 -8" 
+          fill="#E31E24"/>
   </g>
   
-  <!-- Левая рука (приветствует) -->
+  <!-- Левая рука (приветствует вверх) -->
   <g>
-    <ellipse cx="80" cy="180" rx="22" ry="65" fill="#C65D34" transform="rotate(-30 80 180)"/>
+    <ellipse cx="70" cy="200" rx="28" ry="75" fill="#C65D34" transform="rotate(-50 70 200)"/>
     <!-- Пальцы левой руки -->
-    <ellipse cx="50" cy="120" rx="14" ry="25" fill="#C65D34" transform="rotate(-45 50 120)"/>
-    <ellipse cx="45" cy="95" rx="14" ry="25" fill="#C65D34" transform="rotate(-60 45 95)"/>
-    <ellipse cx="55" cy="70" rx="14" ry="25" fill="#C65D34" transform="rotate(-30 55 70)"/>
+    <g transform="translate(35, 120)">
+      <ellipse cx="0" cy="-8" rx="16" ry="30" fill="#C65D34" transform="rotate(-60)"/>
+      <ellipse cx="-5" cy="-28" rx="16" ry="30" fill="#C65D34" transform="rotate(-75)"/>
+      <ellipse cx="12" cy="-20" rx="16" ry="30" fill="#C65D34" transform="rotate(-40)"/>
+      <ellipse cx="20" cy="-5" rx="16" ry="30" fill="#C65D34" transform="rotate(-20)"/>
+    </g>
   </g>
   
-  <!-- Правая рука (приветствует) -->
+  <!-- Правая рука (приветствует вверх) -->
   <g>
-    <ellipse cx="260" cy="180" rx="22" ry="65" fill="#C65D34" transform="rotate(30 260 180)"/>
+    <ellipse cx="270" cy="200" rx="28" ry="75" fill="#C65D34" transform="rotate(50 270 200)"/>
     <!-- Пальцы правой руки -->
-    <ellipse cx="290" cy="120" rx="14" ry="25" fill="#C65D34" transform="rotate(45 290 120)"/>
-    <ellipse cx="295" cy="95" rx="14" ry="25" fill="#C65D34" transform="rotate(60 295 95)"/>
-    <ellipse cx="285" cy="70" rx="14" ry="25" fill="#C65D34" transform="rotate(30 285 70)"/>
+    <g transform="translate(305, 120)">
+      <ellipse cx="0" cy="-8" rx="16" ry="30" fill="#C65D34" transform="rotate(60)"/>
+      <ellipse cx="5" cy="-28" rx="16" ry="30" fill="#C65D34" transform="rotate(75)"/>
+      <ellipse cx="-12" cy="-20" rx="16" ry="30" fill="#C65D34" transform="rotate(40)"/>
+      <ellipse cx="-20" cy="-5" rx="16" ry="30" fill="#C65D34" transform="rotate(20)"/>
+    </g>
   </g>
   
   <!-- Голова -->
-  <ellipse cx="170" cy="100" rx="90" ry="95" fill="#C65D34"/>
+  <ellipse cx="170" cy="110" rx="100" ry="110" fill="#C65D34"/>
   
   <!-- Большие уши (основа) -->
-  <ellipse cx="80" cy="20" rx="45" ry="55" fill="#C65D34"/>
-  <ellipse cx="260" cy="20" rx="45" ry="55" fill="#C65D34"/>
-  <!-- Уши (внутри - светлые) -->
-  <ellipse cx="80" cy="25" rx="28" ry="40" fill="#E8A88A"/>
-  <ellipse cx="260" cy="25" rx="28" ry="40" fill="#E8A88A"/>
+  <ellipse cx="65" cy="15" rx="50" ry="65" fill="#C65D34"/>
+  <ellipse cx="275" cy="15" rx="50" ry="65" fill="#C65D34"/>
+  <!-- Уши (внутри - светлые, пушистые) -->
+  <ellipse cx="65" cy="25" rx="32" ry="50" fill="#E8A88A"/>
+  <ellipse cx="275" cy="25" rx="32" ry="50" fill="#E8A88A"/>
   
   <!-- Мордочка (светлая) -->
-  <ellipse cx="170" cy="120" rx="55" ry="50" fill="#E8A88A"/>
+  <ellipse cx="170" cy="130" rx="62" ry="58" fill="#E8A88A"/>
   
   <!-- Щёчки (розовые) -->
-  <circle cx="110" cy="110" r="18" fill="#FFB6C1" opacity="0.5"/>
-  <circle cx="230" cy="110" r="18" fill="#FFB6C1" opacity="0.5"/>
+  <circle cx="100" cy="115" r="22" fill="#FFB6C1" opacity="0.6"/>
+  <circle cx="240" cy="115" r="22" fill="#FFB6C1" opacity="0.6"/>
   
-  <!-- Глаза -->
-  <ellipse cx="135" cy="85" rx="18" ry="22" fill="white"/>
-  <ellipse cx="205" cy="85" rx="18" ry="22" fill="white"/>
-  <!-- Зрачки -->
-  <circle cx="137" cy="90" r="11" fill="#1a1a1a"/>
-  <circle cx="207" cy="90" r="11" fill="#1a1a1a"/>
-  <!-- Блики в глазах -->
-  <circle cx="141" cy="85" r="5" fill="white"/>
-  <circle cx="211" cy="85" r="5" fill="white"/>
-  <!-- Верхние веки (радость) -->
-  <path d="M 120 80 Q 135 70 152 80" stroke="#C65D34" stroke-width="3" fill="none" stroke-linecap="round"/>
-  <path d="M 188 80 Q 205 70 222 80" stroke="#C65D34" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Белки глаз (большие овалы) -->
+  <ellipse cx="130" cy="95" rx="22" ry="28" fill="white" stroke="#1a1a1a" stroke-width="1"/>
+  <ellipse cx="210" cy="95" rx="22" ry="28" fill="white" stroke="#1a1a1a" stroke-width="1"/>
   
-  <!-- Носик -->
-  <ellipse cx="170" cy="115" rx="12" ry="10" fill="#8B4534"/>
+  <!-- Радужка глаз (с радостью смотрят вверх) -->
+  <circle cx="132" cy="88" r="14" fill="#4A2C2A"/>
+  <circle cx="212" cy="88" r="14" fill="#4A2C2A"/>
   
-  <!-- Рот (улыбка с язычком) -->
-  <path d="M 170 120 Q 160 135 150 140" stroke="#8B4534" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-  <path d="M 170 120 Q 180 135 190 140" stroke="#8B4534" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-  <!-- Язычок -->
-  <ellipse cx="170" cy="145" rx="8" ry="6" fill="#FFB6C1"/>
-  <!-- Передние зубки -->
-  <ellipse cx="163" cy="142" rx="4" ry="5" fill="white"/>
-  <ellipse cx="177" cy="142" rx="4" ry="5" fill="white"/>
+  <!-- Зрачки с отблеском -->
+  <circle cx="135" cy="85" r="10" fill="#1a1a1a"/>
+  <circle cx="215" cy="85" r="10" fill="#1a1a1a"/>
+  <!-- Яркие блики (радость) -->
+  <circle cx="140" cy="80" r="6" fill="white"/>
+  <circle cx="220" cy="80" r="6" fill="white"/>
+  <!-- Маленькие блики -->
+  <circle cx="137" cy="89" r="3" fill="white"/>
+  <circle cx="217" cy="89" r="3" fill="white"/>
+  
+  <!-- Верхние веки (смех, опущены) -->
+  <path d="M 110 85 Q 130 70 152 80" stroke="#C65D34" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M 188 80 Q 210 70 230 85" stroke="#C65D34" stroke-width="4" fill="none" stroke-linecap="round"/>
+  
+  <!-- Носик (большой) -->
+  <ellipse cx="170" cy="130" rx="14" ry="12" fill="#8B4534"/>
+  <!-- Блик на носике -->
+  <ellipse cx="173" cy="128" rx="5" ry="4" fill="#A0603F" opacity="0.6"/>
+  
+  <!-- РОТ (БОЛЬШАЯ ВЕСЕЛАЯ УЛЫБКА) -->
+  <!-- Верхняя губа -->
+  <path d="M 150 145 Q 170 165 190 145" stroke="#8B4534" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <!-- Нижняя губа -->
+  <path d="M 150 145 Q 170 175 190 145" stroke="#8B4534" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Язычок (видно в открытом рту) -->
+  <ellipse cx="170" cy="160" rx="12" ry="14" fill="#FFB6C1"/>
+  
+  <!-- Передние зубки (верхние) -->
+  <g fill="white" stroke="#8B4534" stroke-width="0.5">
+    <rect x="156" y="142" width="8" height="8" rx="1"/>
+    <rect x="166" y="142" width="8" height="8" rx="1"/>
+    <rect x="176" y="142" width="8" height="8" rx="1"/>
+  </g>
+  
+  <!-- Задние зубки (намёк на улыбку) -->
+  <line x1="150" y1="155" x2="145" y2="165" stroke="#FFB6C1" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <line x1="190" y1="155" x2="195" y2="165" stroke="#FFB6C1" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
 </svg>
