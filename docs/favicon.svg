@@ -1,9 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <rect width="100" height="100" fill="#0066cc" rx="8"/>
-  <g fill="white">
-    <rect x="15" y="55" width="12" height="35" rx="2"/>
-    <rect x="34" y="40" width="12" height="50" rx="2"/>
-    <rect x="53" y="50" width="12" height="40" rx="2"/>
-    <rect x="72" y="30" width="12" height="60" rx="2"/>
-  </g>
+  <!-- Nopik Favicon - Tech style with gradient -->
+  <defs>
+    <linearGradient id="nopikGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="100" height="100" rx="20" fill="url(#nopikGrad)"/>
+  
+  <!-- Robot face -->
+  <rect x="20" y="25" width="60" height="55" rx="8" fill="#0f172a"/>
+  
+  <!-- Eyes -->
+  <circle cx="38" cy="48" r="8" fill="#00D4FF"/>
+  <circle cx="62" cy="48" r="8" fill="#00D4FF"/>
+  
+  <!-- Glow -->
+  <circle cx="38" cy="48" r="10" fill="#00D4FF" opacity="0.3"/>
+  <circle cx="62" cy="48" r="10" fill="#00D4FF" opacity="0.3"/>
+  
+  <!-- Smile indicator -->
+  <rect x="35" y="65" width="30" height="5" rx="2.5" fill="#00D4FF" opacity="0.8"/>
+  
+  <!-- Antenna -->
+  <rect x="45" y="10" width="10" height="18" rx="3" fill="url(#nopikGrad)"/>
+  <circle cx="50" cy="8" r="5" fill="#00D4FF"/>
 </svg>

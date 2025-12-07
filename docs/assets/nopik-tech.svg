@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <!-- Техно-минимализм Nopik для EN/ZH/ES/PT/AR -->
+  
+  <!-- Голова - строгая геометрия -->
+  <rect x="8" y="10" width="32" height="30" rx="4" fill="url(#techGrad)"/>
+  
+  <!-- Визор/экран -->
+  <rect x="12" y="16" width="24" height="12" rx="2" fill="#0f172a"/>
+  
+  <!-- Глаза - LED точки -->
+  <circle cx="18" cy="22" r="3" fill="#00D4FF">
+    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="30" cy="22" r="3" fill="#00D4FF">
+    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite" begin="0.3s"/>
+  </circle>
+  
+  <!-- Свечение глаз -->
+  <circle cx="18" cy="22" r="4" fill="#00D4FF" opacity="0.3"/>
+  <circle cx="30" cy="22" r="4" fill="#00D4FF" opacity="0.3"/>
+  
+  <!-- Рот - индикаторная полоса -->
+  <rect x="16" y="32" width="16" height="3" rx="1.5" fill="#00D4FF" opacity="0.8"/>
+  
+  <!-- Боковые вентиляционные решётки -->
+  <g fill="#0f172a" opacity="0.4">
+    <rect x="10" y="34" width="8" height="1"/>
+    <rect x="10" y="36" width="8" height="1"/>
+    <rect x="30" y="34" width="8" height="1"/>
+    <rect x="30" y="36" width="8" height="1"/>
+  </g>
+  
+  <!-- Антенна - сигнал -->
+  <rect x="22" y="4" width="4" height="8" rx="1" fill="url(#techGrad)"/>
+  <circle cx="24" cy="3" r="2" fill="#00D4FF">
+    <animate attributeName="r" values="2;3;2" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.5;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Pulse ring -->
+  <circle cx="24" cy="3" r="4" fill="none" stroke="#00D4FF" stroke-width="0.5" opacity="0.5">
+    <animate attributeName="r" values="3;6;3" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0;0.5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <defs>
+    <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1"/>
+    </linearGradient>
+  </defs>
+</svg>

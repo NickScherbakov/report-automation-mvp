@@ -2,12 +2,12 @@
   "lang": "zh",
   "dir": "ltr",
   "brand": {
-    "name": "AI 报表工具",
-    "tagline": "AI驱动的报表自动化"
+    "name": "Nopik",
+    "tagline": "AI 报表助手"
   },
   "meta": {
-    "title": "AI 报表工具 - 人工智能驱动的报表自动化",
-    "description": "AI驱动的报表自动化工具。通过人工智能优化您的报表工作流程。"
+    "title": "Nopik - AI报表助手",
+    "description": "认识Nopik - 您友好的AI报表助手。智能、快速、可靠。"
   },
   "nav": {
     "solutions": "解决方案",
