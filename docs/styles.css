@@ -84,6 +84,12 @@
     color: #FFFFFF;
 }
 
+[data-theme="1c"] .hero-image-placeholder {
+    background: rgba(227, 30, 36, 0.1);
+    border: 2px solid rgba(227, 30, 36, 0.3);
+    backdrop-filter: blur(5px);
+}
+
 [data-theme="1c"] .cta {
     background: #FFCC00;
 }
@@ -728,12 +734,18 @@ a:hover {
     padding: var(--spacing-xl);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
 }
 
-.hero-image-placeholder svg {
+.hero-image-placeholder svg,
+.hero-image-placeholder img {
     width: 100%;
     height: auto;
     display: block;
+    max-width: 100%;
 }
 
 /* ============================================
