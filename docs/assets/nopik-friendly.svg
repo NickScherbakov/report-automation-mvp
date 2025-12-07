@@ -1,40 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-  <!-- Мультяшный дружелюбный Nopik для RU/KK -->
-  <!-- Голова робота -->
-  <rect x="8" y="12" width="32" height="28" rx="6" fill="#FFCC00"/>
-  <rect x="8" y="12" width="32" height="28" rx="6" fill="url(#friendlyGrad)"/>
+  <!-- Nopik - милый рыжий зверёк с большими ушами -->
   
-  <!-- Антенна -->
-  <circle cx="24" cy="6" r="4" fill="#E31E24"/>
-  <rect x="22" y="6" width="4" height="8" fill="#E31E24"/>
+  <!-- Большие уши -->
+  <ellipse cx="10" cy="14" rx="9" ry="11" fill="#C65D34"/>
+  <ellipse cx="10" cy="14" rx="6" ry="8" fill="#E8A88A"/>
+  <ellipse cx="38" cy="14" rx="9" ry="11" fill="#C65D34"/>
+  <ellipse cx="38" cy="14" rx="6" ry="8" fill="#E8A88A"/>
   
-  <!-- Глаза - большие и добрые -->
-  <ellipse cx="16" cy="24" rx="5" ry="6" fill="white"/>
-  <ellipse cx="32" cy="24" rx="5" ry="6" fill="white"/>
+  <!-- Голова -->
+  <ellipse cx="24" cy="26" rx="14" ry="13" fill="#C65D34"/>
   
-  <!-- Зрачки - смотрят немного вверх (любопытство) -->
-  <circle cx="17" cy="23" r="3" fill="#1a1a1a"/>
-  <circle cx="33" cy="23" r="3" fill="#1a1a1a"/>
+  <!-- Мордочка (светлая) -->
+  <ellipse cx="24" cy="30" rx="8" ry="7" fill="#E8A88A"/>
   
-  <!-- Блики в глазах -->
-  <circle cx="18" cy="22" r="1" fill="white"/>
-  <circle cx="34" cy="22" r="1" fill="white"/>
+  <!-- Глаза -->
+  <ellipse cx="19" cy="24" rx="3.5" ry="4" fill="white"/>
+  <ellipse cx="29" cy="24" rx="3.5" ry="4" fill="white"/>
+  <circle cx="19.5" cy="24.5" r="2" fill="#1a1a1a"/>
+  <circle cx="29.5" cy="24.5" r="2" fill="#1a1a1a"/>
+  <!-- Блики -->
+  <circle cx="20" cy="23.5" r="0.8" fill="white"/>
+  <circle cx="30" cy="23.5" r="0.8" fill="white"/>
   
-  <!-- Улыбка - широкая и дружелюбная -->
-  <path d="M15 32 Q24 40 33 32" stroke="#1a1a1a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Носик -->
+  <ellipse cx="24" cy="29" rx="2.5" ry="2" fill="#8B4534"/>
   
-  <!-- Щёчки (румянец) -->
-  <circle cx="11" cy="30" r="2.5" fill="#FFB6C1" opacity="0.6"/>
-  <circle cx="37" cy="30" r="2.5" fill="#FFB6C1" opacity="0.6"/>
+  <!-- Улыбка -->
+  <path d="M20 33 Q24 37 28 33" stroke="#8B4534" stroke-width="1.5" fill="none" stroke-linecap="round"/>
   
-  <!-- Уши-динамики -->
-  <rect x="2" y="20" width="5" height="12" rx="2" fill="#E31E24"/>
-  <rect x="41" y="20" width="5" height="12" rx="2" fill="#E31E24"/>
-  
-  <defs>
-    <linearGradient id="friendlyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" style="stop-color:#FFE066;stop-opacity:1"/>
-      <stop offset="100%" style="stop-color:#FFCC00;stop-opacity:1"/>
-    </linearGradient>
-  </defs>
+  <!-- Сердечко на груди -->
+  <path d="M24 40 C22 38 20 39 20 41 C20 43 24 46 24 46 C24 46 28 43 28 41 C28 39 26 38 24 40" fill="#E8A88A" opacity="0.6"/>
 </svg>
