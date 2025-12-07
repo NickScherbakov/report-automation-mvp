@@ -353,12 +353,14 @@ a:hover {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
+    flex-wrap: wrap;
 }
 
 .logo-icon { 
-    width: 2.5rem; 
-    height: 2.5rem;
+    width: 2.75rem; 
+    height: 2.75rem;
     flex-shrink: 0;
+    display: block;
 }
 .logo-text { 
     display: inline;
