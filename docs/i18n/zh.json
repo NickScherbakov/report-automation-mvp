@@ -1,9 +1,13 @@
 {
   "lang": "zh",
   "dir": "ltr",
+  "brand": {
+    "name": "AI 报表工具",
+    "tagline": "AI驱动的报表自动化"
+  },
   "meta": {
-    "title": "Report Automation MVP - 智能报表自动化解决方案",
-    "description": "通过智能自动化工具优化您的报表工作流程。"
+    "title": "AI 报表工具 - 人工智能驱动的报表自动化",
+    "description": "AI驱动的报表自动化工具。通过人工智能优化您的报表工作流程。"
   },
   "nav": {
     "solutions": "解决方案",
@@ -81,7 +85,7 @@
   },
   "examples": {
     "title": "实际案例",
-    "subtitle": "了解企业如何使用ReportAuto节省时间并改善决策",
+    "subtitle": "了解企业如何使用 AI 报表工具 节省时间并改善决策",
     "financial": {
       "badge": "财务",
       "title": "月度财务摘要",
@@ -109,9 +113,9 @@
   },
   "faq": {
     "title": "常见问题",
-    "subtitle": "获取关于ReportAuto的常见问题解答",
+    "subtitle": "获取关于 AI 报表工具 的常见问题解答",
     "q1": {
-      "question": "ReportAuto支持哪些数据源？",
+      "question": "AI 报表工具 支持哪些数据源？",
       "answer": "我们支持100+集成，包括1C企业版、Ozon、Wildberries、Yandex.Market、Salesforce、HubSpot、Google Analytics、Stripe、QuickBooks和自定义API。完美适配俄罗斯和独联体市场。如果您的数据源不在列表中，我们的API几乎可以连接任何系统。"
     },
     "q2": {
@@ -136,7 +140,7 @@
   },
   "footer": {
     "about": {
-      "title": "关于ReportAuto",
+      "title": "关于 AI 报表工具",
       "aboutUs": "关于我们",
       "blog": "博客",
       "careers": "招聘",
@@ -163,6 +167,6 @@
       "security": "安全",
       "gdpr": "GDPR"
     },
-    "copyright": "© 2025 ReportAuto. 保留所有权利。"
+    "copyright": "© 2025 AI 报表工具. 保留所有权利。"
   }
 }

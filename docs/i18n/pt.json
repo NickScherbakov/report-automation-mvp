@@ -1,9 +1,13 @@
 {
   "lang": "pt",
   "dir": "ltr",
+  "brand": {
+    "name": "AI Report Tools",
+    "tagline": "Automação com IA"
+  },
   "meta": {
-    "title": "Report Automation MVP - Soluções Inteligentes de Relatórios",
-    "description": "Otimize seu fluxo de trabalho de relatórios com ferramentas de automação inteligente."
+    "title": "AI Report Tools - Relatórios Automatizados com IA",
+    "description": "Ferramentas de automação de relatórios com inteligência artificial. Otimize seu fluxo de trabalho com IA."
   },
   "nav": {
     "solutions": "Soluções",
@@ -81,7 +85,7 @@
   },
   "examples": {
     "title": "Exemplos Reais",
-    "subtitle": "Veja como empresas usam ReportAuto para economizar tempo e melhorar decisões",
+    "subtitle": "Veja como empresas usam AI Report Tools para economizar tempo e melhorar decisões",
     "financial": {
       "badge": "Finanças",
       "title": "Resumo Financeiro Mensal",
@@ -109,9 +113,9 @@
   },
   "faq": {
     "title": "Perguntas Frequentes",
-    "subtitle": "Respostas para perguntas comuns sobre ReportAuto",
+    "subtitle": "Respostas para perguntas comuns sobre AI Report Tools",
     "q1": {
-      "question": "Quais fontes de dados o ReportAuto suporta?",
+      "question": "Quais fontes de dados o AI Report Tools suporta?",
       "answer": "Suportamos 100+ integrações incluindo 1C:Enterprise, Ozon, Wildberries, Yandex.Market, Salesforce, HubSpot, Google Analytics, Stripe, QuickBooks e APIs personalizadas. Perfeito para mercados da Rússia e CEI. Se sua fonte não está listada, nossa API pode conectar quase qualquer coisa."
     },
     "q2": {
@@ -136,7 +140,7 @@
   },
   "footer": {
     "about": {
-      "title": "Sobre ReportAuto",
+      "title": "Sobre AI Report Tools",
       "aboutUs": "Sobre nós",
       "blog": "Blog",
       "careers": "Carreiras",
@@ -163,6 +167,6 @@
       "security": "Segurança",
       "gdpr": "LGPD"
     },
-    "copyright": "© 2025 ReportAuto. Todos os direitos reservados."
+    "copyright": "© 2025 AI Report Tools. Todos os direitos reservados."
   }
 }

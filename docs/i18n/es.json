@@ -1,9 +1,13 @@
 {
   "lang": "es",
   "dir": "ltr",
+  "brand": {
+    "name": "AI Report Tools",
+    "tagline": "Automatización con IA"
+  },
   "meta": {
-    "title": "Report Automation MVP - Soluciones Inteligentes de Informes",
-    "description": "Optimice su flujo de trabajo de informes con herramientas de automatización inteligente."
+    "title": "AI Report Tools - Informes Automatizados con IA",
+    "description": "Herramientas de automatización de informes con inteligencia artificial. Optimice su flujo de trabajo con IA."
   },
   "nav": {
     "solutions": "Soluciones",
@@ -81,7 +85,7 @@
   },
   "examples": {
     "title": "Ejemplos Reales",
-    "subtitle": "Vea cómo las empresas usan ReportAuto para ahorrar tiempo y mejorar decisiones",
+    "subtitle": "Vea cómo las empresas usan AI Report Tools para ahorrar tiempo y mejorar decisiones",
     "financial": {
       "badge": "Finanzas",
       "title": "Resumen Financiero Mensual",
@@ -109,9 +113,9 @@
   },
   "faq": {
     "title": "Preguntas Frecuentes",
-    "subtitle": "Obtenga respuestas a preguntas comunes sobre ReportAuto",
+    "subtitle": "Obtenga respuestas a preguntas comunes sobre AI Report Tools",
     "q1": {
-      "question": "¿Qué fuentes de datos soporta ReportAuto?",
+      "question": "¿Qué fuentes de datos soporta AI Report Tools?",
       "answer": "Soportamos 100+ integraciones incluyendo 1C:Enterprise, Ozon, Wildberries, Yandex.Market, Salesforce, HubSpot, Google Analytics, Stripe, QuickBooks y APIs personalizadas. Perfecto para mercados de Rusia y CEI. Si su fuente no está listada, nuestra API puede conectar casi cualquier cosa."
     },
     "q2": {
@@ -136,7 +140,7 @@
   },
   "footer": {
     "about": {
-      "title": "Sobre ReportAuto",
+      "title": "Sobre AI Report Tools",
       "aboutUs": "Sobre nosotros",
       "blog": "Blog",
       "careers": "Carreras",
@@ -163,6 +167,6 @@
       "security": "Seguridad",
       "gdpr": "GDPR"
     },
-    "copyright": "© 2025 ReportAuto. Todos los derechos reservados."
+    "copyright": "© 2025 AI Report Tools. Todos los derechos reservados."
   }
 }

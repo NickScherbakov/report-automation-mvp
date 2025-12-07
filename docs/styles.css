@@ -357,6 +357,23 @@ a:hover {
 
 .logo-icon { font-size: 1.75rem; }
 .logo-text { display: inline; }
+.logo-tagline {
+    display: block;
+    font-size: 0.6rem;
+    font-weight: 500;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: -0.25rem;
+    opacity: 0.8;
+}
+
+/* 1C theme tagline */
+[data-theme="1c"] .logo-tagline {
+    color: var(--primary-color);
+    font-weight: 600;
+    opacity: 1;
+}
 
 .nav-menu {
     display: flex;

@@ -1,9 +1,13 @@
 {
   "lang": "en",
   "dir": "ltr",
+  "brand": {
+    "name": "AI Report Tools",
+    "tagline": "AI-Powered Report Automation"
+  },
   "meta": {
-    "title": "Report Automation MVP - Intelligent Reporting Solutions",
-    "description": "Streamline your reporting workflow with intelligent automation tools."
+    "title": "AI Report Tools - Intelligent AI-Powered Reporting",
+    "description": "AI-powered report automation tools. Streamline your reporting workflow with intelligent automation."
   },
   "nav": {
     "solutions": "Solutions",
@@ -81,7 +85,7 @@
   },
   "examples": {
     "title": "Real-World Examples",
-    "subtitle": "See how companies use ReportAuto to save time and improve decisions",
+    "subtitle": "See how companies use AI Report Tools to save time and improve decisions",
     "financial": {
       "badge": "Finance",
       "title": "Monthly Financial Summary",
@@ -109,9 +113,9 @@
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Get answers to common questions about ReportAuto",
+    "subtitle": "Get answers to common questions about AI Report Tools",
     "q1": {
-      "question": "What data sources does ReportAuto support?",
+      "question": "What data sources does AI Report Tools support?",
       "answer": "We support 100+ integrations including 1C:Enterprise, Ozon, Wildberries, Yandex.Market, Salesforce, HubSpot, Google Analytics, Stripe, QuickBooks, and custom APIs. Perfect for Russia & CIS markets. If your data source isn't listed, our API can connect almost anything."
     },
     "q2": {
@@ -136,7 +140,7 @@
   },
   "footer": {
     "about": {
-      "title": "About ReportAuto",
+      "title": "About AI Report Tools",
       "aboutUs": "About Us",
       "blog": "Blog",
       "careers": "Careers",
@@ -163,6 +167,6 @@
       "security": "Security",
       "gdpr": "GDPR"
     },
-    "copyright": "© 2025 ReportAuto. All rights reserved."
+    "copyright": "© 2025 AI Report Tools. All rights reserved."
   }
 }
