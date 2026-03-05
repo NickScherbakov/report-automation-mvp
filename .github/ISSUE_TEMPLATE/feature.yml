@@ -1,0 +1,111 @@
+name: "🎯 Feature Request"
+description: "Propose a new feature or improvement to Nopik"
+title: "[FEATURE] "
+labels: ["feature-request"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing! Please fill in as much detail as possible.
+
+  - type: dropdown
+    id: phase
+    attributes:
+      label: "Which Roadmap Phase?"
+      description: "Select the phase this feature belongs to (see ROADMAP.md)"
+      options:
+        - "Phase 1: Working Product (Day 1-30)"
+        - "Phase 2: Monetization (Day 31-60)"
+        - "Phase 3: Traffic & Sales (Day 61-90)"
+        - "Phase 4: Scale (Day 91-120)"
+        - "Future (Post-Day 120)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Priority"
+      description: "How urgent is this feature?"
+      options:
+        - "P0 (Critical – blocks customer onboarding or revenue)"
+        - "P1 (High – impacts core product, nice-to-have)"
+        - "P2 (Medium – improves UX, not blocking)"
+        - "P3 (Low – nice enhancement, can wait)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "What problem does this feature solve? Who is the user?"
+      placeholder: |
+        Example:
+        Users need a way to export reports as CSV so they can analyze data in Excel without manual copy-paste.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: "Acceptance Criteria"
+      description: |
+        How do we know this feature is done? (Use checklist format)
+      placeholder: |
+        - [ ] Users can click "Export as CSV" button
+        - [ ] CSV contains all columns from final report
+        - [ ] CSV exports < 5 seconds for 10k rows
+        - [ ] File size < 10MB
+      validations:
+        required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: "Dependencies (Optional)"
+      description: "Does this require other features to be completed first?"
+      placeholder: |
+        - Requires T4 (Transformation engine)
+        - Blocked by #42 (API auth)
+      validations:
+        required: false
+
+  - type: dropdown
+    id: effort
+    attributes:
+      label: "Estimated Effort"
+      description: "Rough estimate of work required"
+      options:
+        - "S (Small – 1-3 days)"
+        - "M (Medium – 1-2 weeks)"
+        - "L (Large – 2-4 weeks)"
+        - "XL (Extra Large – 1+ months)"
+    validations:
+      required: false
+
+  - type: textarea
+    id: design-notes
+    attributes:
+      label: "Design / Implementation Notes (Optional)"
+      description: "Any specific approach, tech, or design considerations?"
+      placeholder: |
+        - Consider using PapaParse for CSV generation
+        - Should integrate with existing report pipeline
+        - Design: Add button next to PDF download
+      validations:
+        required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Before Submitting"
+      options:
+        - label: "I have searched for existing issues and found none"
+          required: true
+        - label: "This feature aligns with the Nopik roadmap"
+          required: false
+        - label: "I can provide more details if asked"
+          required: false

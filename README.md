@@ -24,9 +24,22 @@ Report Automation MVP is a B2B SaaS solution that enables automated report gener
 
 ## Project Status
 
-**Phase**: MVP Development  
-**Timeline**: 6-week sprint  
-**Current Sprint**: Setup and Infrastructure
+**Phase**: Phase 1 - Working Product (Day 1–30)  
+**Timeline**: 120-day sprint (March 5 – July 2, 2026)  
+**Current Milestone**: M1 - Working MVP on Staging (April 4)  
+**Revenue Target**: $50/day by Day 120
+
+### 📊 Project Planning & Strategy
+
+Our development is driven by a comprehensive 120-day roadmap. All team members should reference these documents:
+
+- 🗺️ **[ROADMAP.md](ROADMAP.md)** — Complete 120-day plan with 4 phases, 25 tasks (T1–T25), and detailed sprint breakdown
+- 🎯 **[MILESTONES.md](docs/MILESTONES.md)** — 4 major milestones with acceptance criteria (M1–M4)
+- 💰 **[PRICING.md](docs/PRICING.md)** — Pricing tiers, business model, and financial projections
+
+**Quick Links:**
+- [Open Issues for Current Sprint](https://github.com/NickScherbakov/report-automation-mvp/issues)
+- [Current Milestone Progress](https://github.com/NickScherbakov/report-automation-mvp/milestones)
 
 ## Architecture
 

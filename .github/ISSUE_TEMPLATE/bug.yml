@@ -1,0 +1,140 @@
+name: "🐛 Bug Report"
+description: "Report a bug or issue with Nopik"
+title: "[BUG] "
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting! Help us fix this bug by providing as much detail as possible.
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: "Severity"
+      description: "How critical is this bug?"
+      options:
+        - "Critical 🔴 (Service down, data loss, security)"
+        - "Major 🟠 (Feature broken, heavy UX friction)"
+        - "Minor 🟡 (Small issue, workaround exists)"
+        - "Trivial 🟢 (Cosmetic, very low impact)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Bug Summary"
+      description: "What is the bug? (1-2 sentences)"
+      placeholder: "PDF generation fails when report contains non-ASCII characters."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Exact steps to trigger the bug"
+      placeholder: |
+        1. Go to Dashboard
+        2. Create new report with Google Sheets source
+        3. Add Cyrillic column names (e.g., "Сумма")
+        4. Click "Generate PDF"
+        5. Observe error
+      validations:
+        required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected Behavior"
+      description: "What should happen?"
+      placeholder: "PDF should render correctly with Cyrillic column headers."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual Behavior"
+      description: "What actually happens? Include error messages."
+      placeholder: |
+        PDF generation fails with error:
+        ```
+        Error: Cannot set property 'text' of undefined
+        at PDFRenderer.addHeader (renderer.ts:42)
+        ```
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "Environment"
+      description: "Where does this occur?"
+      options:
+        - "Production (nopik.io)"
+        - "Staging (staging.nopik.io)"
+        - "Local (docker-compose)"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: browser
+    attributes:
+      label: "Browser / Device (If UI related)"
+      description: "OS, browser, version"
+      placeholder: "macOS 13.2, Chrome 114.0.5735.198"
+      validations:
+        required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Relevant Logs / Screenshots"
+      description: "Error logs, console output, or screenshot"
+      placeholder: |
+        ```
+        [ERROR] PDFRenderer: Cannot process non-UTF8 text
+        Stack: ... (paste full error)
+        ```
+      validations:
+        required: false
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: "Workaround (If Known)"
+      description: "Is there a temporary workaround?"
+      placeholder: "Use ASCII-only column names for now."
+      validations:
+        required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: "Additional Context (Optional)"
+      description: "Anything else that might help?"
+      placeholder: |
+        - First noticed after deploying version 0.1.5
+        - Affects reports with >50 columns
+        - Reproducible 100% of the time
+      validations:
+        required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Before Submitting"
+      options:
+        - label: "I have searched for existing bugs and found none"
+          required: true
+        - label: "I can reliably reproduce this issue"
+          required: true
+        - label: "I'm using the latest version of Nopik"
+          required: false
+        - label: "This is not a feature request (use Feature instead)"
+          required: true
