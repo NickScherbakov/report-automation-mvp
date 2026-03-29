@@ -1,4 +1,4 @@
-{
+﻿{
   "lang": "en",
   "dir": "ltr",
   "brand": {
@@ -7,7 +7,8 @@
   },
   "meta": {
     "title": "Nopik - AI Report Assistant",
-    "description": "Meet Nopik - your friendly AI assistant for automated reports. Smart, fast, reliable."
+    "description": "Meet Nopik - your friendly AI assistant for automated reports. Smart, fast, reliable.",
+    "keywords": "1C reports automation, 1C Wildberries integration, 1C marketplace integration, AI reports 1C, automated reports marketplace, inventory sync 1C"
   },
   "nav": {
     "solutions": "Solutions",

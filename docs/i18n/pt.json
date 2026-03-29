@@ -1,4 +1,4 @@
-{
+﻿{
   "lang": "pt",
   "dir": "ltr",
   "brand": {
@@ -7,7 +7,8 @@
   },
   "meta": {
     "title": "Nopik - Assistente AI para Relatórios",
-    "description": "Conheça o Nopik - seu assistente AI amigável para relatórios automatizados. Inteligente, rápido, confiável."
+    "description": "Conheça o Nopik - seu assistente AI amigável para relatórios automatizados. Inteligente, rápido, confiável.",
+    "keywords": "automação de relatórios 1C, integração marketplace 1C, relatórios IA"
   },
   "nav": {
     "solutions": "Soluções",

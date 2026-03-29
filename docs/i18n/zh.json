@@ -1,4 +1,4 @@
-{
+﻿{
   "lang": "zh",
   "dir": "ltr",
   "brand": {
@@ -7,7 +7,8 @@
   },
   "meta": {
     "title": "Nopik - AI报表助手",
-    "description": "认识Nopik - 您友好的AI报表助手。智能、快速、可靠。"
+    "description": "认识Nopik - 您友好的AI报表助手。智能、快速、可靠。",
+    "keywords": "1C报表自动化, 人工智能报表, 市场集成1C, 自动报表"
   },
   "nav": {
     "solutions": "解决方案",
