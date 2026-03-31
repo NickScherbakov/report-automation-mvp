@@ -1,4 +1,4 @@
-﻿{
+{
   "lang": "pt",
   "dir": "ltr",
   "brand": {
@@ -17,6 +17,9 @@
     "examples": "Exemplos",
     "faq": "FAQ",
     "getStarted": "Começar"
+  },
+  "earlyAccess": {
+    "banner": " Acesso Antecipado  Grátis para as primeiras 10 empresas"
   },
   "hero": {
     "title": "Automatize seus relatórios em minutos",
@@ -48,7 +51,7 @@
     "title": "Recursos Poderosos",
     "subtitle": "Tudo que você precisa para automatizar seus relatórios",
     "integrations": {
-      "title": "100+ Integrações",
+      "title": "Integrações 1C e Marketplace",
       "description": "Conecte-se ao 1C:Enterprise, Ozon, Wildberries, Yandex.Market, além de Salesforce, HubSpot, Google Analytics e mais."
     },
     "schedule": {
@@ -60,8 +63,8 @@
       "description": "Adicione seu logo, cores e marca para que os relatórios reflitam a identidade da sua empresa."
     },
     "security": {
-      "title": "Segurança Empresarial",
-      "description": "Conformidade SOC 2, criptografia ponta a ponta e controle de acesso baseado em funções para seus dados."
+      "title": "Segurança de Dados",
+      "description": "Criptografia ponta a ponta e controle de acesso baseado em funções. Como MVP em estágio inicial, trabalhamos ativamente em certificações de segurança."
     }
   },
   "workflow": {
@@ -117,11 +120,11 @@
     "subtitle": "Respostas para perguntas comuns sobre AI Report Tools",
     "q1": {
       "question": "Quais fontes de dados o AI Report Tools suporta?",
-      "answer": "Suportamos 100+ integrações incluindo 1C:Enterprise, Ozon, Wildberries, Yandex.Market, Salesforce, HubSpot, Google Analytics, Stripe, QuickBooks e APIs personalizadas. Perfeito para mercados da Rússia e CEI. Se sua fonte não está listada, nossa API pode conectar quase qualquer coisa."
+      "answer": "Atualmente suportamos integrações principais para Rússia e CEI: 1C:Enterprise, Ozon, Wildberries e Yandex.Market. Este é um MVP — integrações adicionais estão em nosso roadmap. Precisa de algo específico? Entre em contato e priorizaremos."
     },
     "q2": {
       "question": "Quão seguros estão meus dados?",
-      "answer": "Mantemos certificação SOC 2 Type II, usamos criptografia ponta a ponta e armazenamos todos os dados na AWS com redundância multi-região. Seus dados nunca são compartilhados com terceiros e você mantém controle total."
+      "answer": "Usamos criptografia ponta a ponta para proteger seus dados. Como MVP em estágio inicial, ainda não temos certificações formais (SOC 2 etc.), mas seguimos práticas de desenvolvimento seguro. Seus dados nunca são compartilhados com terceiros."
     },
     "q3": {
       "question": "Posso personalizar o design do relatório?",
@@ -134,10 +137,10 @@
   },
   "cta": {
     "title": "Pronto para automatizar seus relatórios?",
-    "subtitle": "Junte-se a centenas de empresas economizando horas toda semana com automação inteligente de relatórios.",
-    "button1": "Iniciar teste grátis",
+    "subtitle": "Seja uma das primeiras 10 empresas a experimentar nossa beta — grátis para sempre para membros de acesso antecipado.",
+    "button1": "Entrar para o Beta — Grátis",
     "button2": "Agendar demo",
-    "note": "Sem cartão de crédito • 14 dias grátis • Cancele quando quiser"
+    "note": "Sem cartão de crédito • Grátis para as primeiras 10 empresas • Beta de acesso antecipado"
   },
   "footer": {
     "about": {
@@ -171,3 +174,4 @@
     "copyright": "© 2025 AI Report Tools. Todos os direitos reservados."
   }
 }
+

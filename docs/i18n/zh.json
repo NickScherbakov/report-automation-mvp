@@ -1,4 +1,4 @@
-﻿{
+{
   "lang": "zh",
   "dir": "ltr",
   "brand": {
@@ -18,10 +18,14 @@
     "faq": "常见问题",
     "getStarted": "立即开始"
   },
+  "earlyAccess": {
+    "banner": " 早期访问  首批10家企业免费"
+  },
   "hero": {
+    "badge": "Beta测试版",
     "title": "几分钟内实现报表自动化",
     "subtitle": "将复杂的报表流程转化为简单的自动化工作流。节省时间，减少错误，专注于重要事务。",
-    "cta1": "免费试用",
+    "cta1": "加入测试版  免费",
     "cta2": "查看案例"
   },
   "solutions": {
@@ -48,8 +52,8 @@
     "title": "强大功能",
     "subtitle": "报表自动化所需的一切",
     "integrations": {
-      "title": "100+ 集成",
-      "description": "连接1C企业版、Ozon、Wildberries、Yandex.Market，以及Salesforce、HubSpot、Google Analytics等。"
+      "title": "1C与电商平台集成",
+      "description": "深度集成1C企业版、Ozon、Wildberries和Yandex.Market  俄罗斯和独联体市场的核心工具。"
     },
     "schedule": {
       "title": "定时与自动化",
@@ -60,8 +64,8 @@
       "description": "添加您的标志、颜色和品牌元素，让报表体现公司形象。"
     },
     "security": {
-      "title": "企业级安全",
-      "description": "SOC 2合规、端到端加密和基于角色的数据访问控制。"
+      "title": "数据安全",
+      "description": "端到端加密和基于角色的访问控制。作为早期MVP，我们正积极推进安全认证工作。"
     }
   },
   "workflow": {
@@ -117,11 +121,11 @@
     "subtitle": "获取关于 AI 报表工具 的常见问题解答",
     "q1": {
       "question": "AI 报表工具 支持哪些数据源？",
-      "answer": "我们支持100+集成，包括1C企业版、Ozon、Wildberries、Yandex.Market、Salesforce、HubSpot、Google Analytics、Stripe、QuickBooks和自定义API。完美适配俄罗斯和独联体市场。如果您的数据源不在列表中，我们的API几乎可以连接任何系统。"
+      "answer": "目前支持俄罗斯和独联体的关键集成：1C企业版、Ozon、Wildberries和Yandex.Market。这是MVP版本，更多集成在开发路线图中。需要特定集成？联系我们，我们会优先开发。"
     },
     "q2": {
       "question": "我的数据安全吗？",
-      "answer": "我们拥有SOC 2 Type II认证，使用端到端加密，所有数据存储在AWS多区域冗余系统中。您的数据永不与第三方共享，您始终保持完全控制。"
+      "answer": "我们使用端到端加密保护您的数据。作为早期MVP，尚未获得正式安全认证（SOC 2等），但我们遵循安全开发规范。您的数据永不与第三方共享。"
     },
     "q3": {
       "question": "可以自定义报表设计吗？",
@@ -134,10 +138,10 @@
   },
   "cta": {
     "title": "准备好自动化您的报表了吗？",
-    "subtitle": "加入数百家每周节省数小时的公司，体验智能报表自动化。",
-    "button1": "开始免费试用",
+    "subtitle": "成为首批10家测试Beta版的企业之一 — 早期访问会员永久免费。",
+    "button1": "加入测试版 — 免费",
     "button2": "预约演示",
-    "note": "无需信用卡 • 14天免费试用 • 随时取消"
+    "note": "无需信用卡 • 首批10家企业免费 • 早期访问Beta"
   },
   "footer": {
     "about": {
@@ -171,3 +175,4 @@
     "copyright": "© 2025 AI 报表工具. 保留所有权利。"
   }
 }
+

@@ -1,4 +1,4 @@
-﻿{
+{
   "lang": "es",
   "dir": "ltr",
   "brand": {
@@ -18,10 +18,14 @@
     "faq": "FAQ",
     "getStarted": "Comenzar"
   },
+  "earlyAccess": {
+    "banner": " Acceso Anticipado  Gratis para las primeras 10 empresas"
+  },
   "hero": {
+    "badge": "Beta  Acceso Anticipado",
     "title": "Automatice sus informes en minutos",
     "subtitle": "Transforme procesos de informes complejos en flujos de trabajo automatizados simples. Ahorre tiempo, reduzca errores y concéntrese en lo importante.",
-    "cta1": "Prueba gratuita",
+    "cta1": "Unirse a la Beta  Gratis",
     "cta2": "Ver ejemplos"
   },
   "solutions": {
@@ -48,8 +52,8 @@
     "title": "Características Potentes",
     "subtitle": "Todo lo que necesita para automatizar sus informes",
     "integrations": {
-      "title": "100+ Integraciones",
-      "description": "Conéctese a 1C:Enterprise, Ozon, Wildberries, Yandex.Market, así como Salesforce, HubSpot, Google Analytics y más."
+      "title": "Integraciones 1C y Marketplace",
+      "description": "Integración profunda con 1C:Enterprise, Ozon, Wildberries y Yandex.Market  herramientas clave para mercados de Rusia y CEI."
     },
     "schedule": {
       "title": "Programación y Automatización",
@@ -60,8 +64,8 @@
       "description": "Agregue su logo, colores y marca para que los informes reflejen la identidad de su empresa."
     },
     "security": {
-      "title": "Seguridad Empresarial",
-      "description": "Cumplimiento SOC 2, cifrado de extremo a extremo y control de acceso basado en roles para sus datos."
+      "title": "Seguridad de Datos",
+      "description": "Cifrado de extremo a extremo y control de acceso basado en roles. Como MVP en etapa inicial, trabajamos activamente en certificaciones de seguridad."
     }
   },
   "workflow": {
@@ -117,11 +121,11 @@
     "subtitle": "Obtenga respuestas a preguntas comunes sobre AI Report Tools",
     "q1": {
       "question": "¿Qué fuentes de datos soporta AI Report Tools?",
-      "answer": "Soportamos 100+ integraciones incluyendo 1C:Enterprise, Ozon, Wildberries, Yandex.Market, Salesforce, HubSpot, Google Analytics, Stripe, QuickBooks y APIs personalizadas. Perfecto para mercados de Rusia y CEI. Si su fuente no está listada, nuestra API puede conectar casi cualquier cosa."
+      "answer": "Actualmente soportamos integraciones clave para Rusia y CEI: 1C:Enterprise, Ozon, Wildberries y Yandex.Market. Este es un MVP  integraciones adicionales están en nuestra hoja de ruta. Necesita algo específico? Contáctenos y lo priorizaremos."
     },
     "q2": {
       "question": "¿Qué tan seguros están mis datos?",
-      "answer": "Mantenemos certificación SOC 2 Type II, usamos cifrado de extremo a extremo y almacenamos todos los datos en AWS con redundancia multi-región. Sus datos nunca se comparten con terceros y usted mantiene control total."
+      "answer": "Usamos cifrado de extremo a extremo para proteger sus datos. Como MVP en etapa inicial, aún no tenemos certificaciones formales (SOC 2 etc.), pero seguimos prácticas de desarrollo seguro. Sus datos nunca se comparten con terceros."
     },
     "q3": {
       "question": "¿Puedo personalizar el diseño del informe?",
@@ -134,10 +138,10 @@
   },
   "cta": {
     "title": "¿Listo para automatizar sus informes?",
-    "subtitle": "Únase a cientos de empresas que ahorran horas cada semana con automatización inteligente de informes.",
-    "button1": "Iniciar prueba gratuita",
+    "subtitle": "Sea una de las primeras 10 empresas en probar nuestra beta  gratis para siempre para miembros de acceso anticipado.",
+    "button1": "Unirse a la Beta  Gratis",
     "button2": "Programar demo",
-    "note": "Sin tarjeta de crédito • 14 días gratis • Cancele cuando quiera"
+    "note": "Sin tarjeta de crédito • Gratis para las primeras 10 empresas • Beta de acceso anticipado"
   },
   "footer": {
     "about": {
@@ -171,3 +175,4 @@
     "copyright": "© 2025 AI Report Tools. Todos los derechos reservados."
   }
 }
+

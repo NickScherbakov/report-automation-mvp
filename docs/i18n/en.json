@@ -1,4 +1,4 @@
-﻿{
+{
   "lang": "en",
   "dir": "ltr",
   "brand": {
@@ -18,10 +18,14 @@
     "faq": "FAQ",
     "getStarted": "Get Started"
   },
+  "earlyAccess": {
+    "banner": " Early Access Beta  Free for the first 10 companies"
+  },
   "hero": {
+    "badge": "Early Access Beta",
     "title": "Automate Your Reports in Minutes",
     "subtitle": "Transform complex reporting processes into simple, automated workflows. Save time, reduce errors, and focus on what matters.",
-    "cta1": "Start Free Trial",
+    "cta1": "Join Beta  Free",
     "cta2": "See Examples"
   },
   "solutions": {
@@ -48,8 +52,8 @@
     "title": "Powerful Features",
     "subtitle": "Everything you need to automate your reporting",
     "integrations": {
-      "title": "100+ Integrations",
-      "description": "Connect to 1C:Enterprise, Ozon, Wildberries, Yandex.Market, as well as Salesforce, HubSpot, Google Analytics, and more."
+      "title": "1C & Marketplace Integrations",
+      "description": "Deep integration with 1C:Enterprise, Ozon, Wildberries, and Yandex.Market  core tools for Russia & CIS markets."
     },
     "schedule": {
       "title": "Schedule & Automate",
@@ -60,8 +64,8 @@
       "description": "Add your logo, colors, and branding to make reports reflect your company identity."
     },
     "security": {
-      "title": "Enterprise Security",
-      "description": "SOC 2 compliant, end-to-end encryption, and role-based access control for your data."
+      "title": "Data Security",
+      "description": "End-to-end encryption and role-based access control. As an early-stage MVP, we\u0027re actively working toward security certifications."
     }
   },
   "workflow": {
@@ -117,11 +121,11 @@
     "subtitle": "Get answers to common questions about AI Report Tools",
     "q1": {
       "question": "What data sources does AI Report Tools support?",
-      "answer": "We support 100+ integrations including 1C:Enterprise, Ozon, Wildberries, Yandex.Market, Salesforce, HubSpot, Google Analytics, Stripe, QuickBooks, and custom APIs. Perfect for Russia & CIS markets. If your data source isn't listed, our API can connect almost anything."
+      "answer": "Currently we support key integrations for Russia & CIS: 1C:Enterprise, Ozon, Wildberries, and Yandex.Market. This is an MVP  additional integrations are on our roadmap. Need something specific? Contact us and we\u0027ll prioritize it."
     },
     "q2": {
       "question": "How secure is my data?",
-      "answer": "We maintain SOC 2 Type II certification, use end-to-end encryption, and store all data in AWS with multi-region redundancy. Your data is never shared with third parties and you maintain full control."
+      "answer": "We use end-to-end encryption to protect your data. As an early-stage MVP, we don\u0027t yet have formal security certifications (SOC 2 etc.), but we follow secure development practices. Your data is never shared with third parties."
     },
     "q3": {
       "question": "Can I customize the report design?",
@@ -134,10 +138,10 @@
   },
   "cta": {
     "title": "Ready to Automate Your Reports?",
-    "subtitle": "Join hundreds of companies saving hours every week with intelligent report automation.",
-    "button1": "Start Your Free Trial",
+    "subtitle": "Be among the first 10 companies to try our beta — free forever for early access members.",
+    "button1": "Join Beta — Free",
     "button2": "Schedule a Demo",
-    "note": "No credit card required • 14-day free trial • Cancel anytime"
+    "note": "No credit card required • Free for first 10 companies • Early Access Beta"
   },
   "footer": {
     "about": {
@@ -171,3 +175,4 @@
     "copyright": "© 2025 AI Report Tools. All rights reserved."
   }
 }
+

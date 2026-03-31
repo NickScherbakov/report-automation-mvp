@@ -29,6 +29,36 @@
     
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .early-access-banner {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #fff;
+            text-align: center;
+            padding: 10px 40px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            position: relative;
+            z-index: 1000;
+        }
+        .early-access-banner a { color: #fff; text-decoration: underline; }
+        .early-access-banner .banner-close {
+            position: absolute; right: 16px; top: 50%; transform: translateY(-50%);
+            background: none; border: none; color: #fff; font-size: 1.2rem; cursor: pointer;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(102,126,234,0.15);
+            border: 1px solid rgba(102,126,234,0.5);
+            color: #667eea;
+            border-radius: 20px;
+            padding: 4px 14px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+    </style>
     
     <title data-i18n="meta.title">Nopik - AI Report Assistant</title>
     <!-- Hreflang for multilingual SEO -->
@@ -123,14 +153,21 @@
         </div>
     </nav>
 
+    <!-- Early Access Banner -->
+    <div class="early-access-banner" id="early-access-banner">
+        <span data-i18n="earlyAccess.banner">🚀 Early Access Beta — Free for the first 10 companies</span>
+        <button class="banner-close" onclick="document.getElementById('early-access-banner').style.display='none'" aria-label="Close">×</button>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-content">
+                <span class="hero-badge" data-i18n="hero.badge">Early Access Beta</span>
                 <h1 class="hero-title" data-i18n="hero.title">Automate Your Reports in Minutes</h1>
                 <p class="hero-subtitle" data-i18n="hero.subtitle">Transform complex reporting processes into simple, automated workflows. Save time, reduce errors, and focus on what matters.</p>
                 <div class="hero-ctas">
-                    <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">Start Free Trial</a>
+                    <a href="#contact" class="btn btn-primary" data-i18n="hero.cta1">Join Beta — Free</a>
                     <a href="#examples" class="btn btn-secondary" data-i18n="hero.cta2">See Examples</a>
                 </div>
             </div>
@@ -181,9 +218,9 @@
                 <div class="feature-card">
                     <div class="feature-header">
                         <div class="feature-icon">🔌</div>
-                        <h3 data-i18n="features.integrations.title">100+ Integrations</h3>
+                        <h3 data-i18n="features.integrations.title">1C &amp; Marketplace Integrations</h3>
                     </div>
-                    <p data-i18n="features.integrations.description">Connect to 1C:Enterprise, Ozon, Wildberries, Yandex.Market, as well as Salesforce, HubSpot, Google Analytics, and more.</p>
+                    <p data-i18n="features.integrations.description">Deep integration with 1C:Enterprise, Ozon, Wildberries, and Yandex.Market — core tools for Russia &amp; CIS markets.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-header">
@@ -202,9 +239,9 @@
                 <div class="feature-card">
                     <div class="feature-header">
                         <div class="feature-icon">🔒</div>
-                        <h3 data-i18n="features.security.title">Enterprise Security</h3>
+                        <h3 data-i18n="features.security.title">Data Security</h3>
                     </div>
-                    <p data-i18n="features.security.description">SOC 2 compliant, end-to-end encryption, and role-based access control for your data.</p>
+                    <p data-i18n="features.security.description">End-to-end encryption and role-based access control. As an early-stage MVP, we're actively working toward security certifications.</p>
                 </div>
             </div>
         </div>
@@ -289,7 +326,7 @@
                         <span class="faq-toggle">+</span>
                     </summary>
                     <div class="faq-answer">
-                        <p data-i18n="faq.q1.answer">We support 100+ integrations including 1C:Enterprise, Ozon, Wildberries, Yandex.Market, Salesforce, HubSpot, Google Analytics, Stripe, QuickBooks, and custom APIs. Perfect for Russia & CIS markets. If your data source isn't listed, our API can connect almost anything.</p>
+                        <p data-i18n="faq.q1.answer">Currently we support key integrations for Russia &amp; CIS: 1C:Enterprise, Ozon, Wildberries, and Yandex.Market. This is an MVP — additional integrations are on our roadmap. Need something specific? Contact us and we'll prioritize it.</p>
                     </div>
                 </details>
                 <details class="faq-item">
@@ -298,7 +335,7 @@
                         <span class="faq-toggle">+</span>
                     </summary>
                     <div class="faq-answer">
-                        <p data-i18n="faq.q2.answer">We maintain SOC 2 Type II certification, use end-to-end encryption, and store all data in AWS with multi-region redundancy. Your data is never shared with third parties and you maintain full control.</p>
+                        <p data-i18n="faq.q2.answer">We use end-to-end encryption to protect your data. As an early-stage MVP, we don't yet have formal security certifications (SOC 2 etc.), but we follow secure development practices. Your data is never shared with third parties.</p>
                     </div>
                 </details>
                 <details class="faq-item">
@@ -328,12 +365,12 @@
         <div class="container">
             <div class="cta-content">
                 <h2 data-i18n="cta.title">Ready to Automate Your Reports?</h2>
-                <p data-i18n="cta.subtitle">Join hundreds of companies saving hours every week with intelligent report automation.</p>
+                <p data-i18n="cta.subtitle">Be among the first 10 companies to try our beta — free forever for early access members.</p>
                 <div class="cta-buttons">
-                    <a href="#" class="btn btn-primary btn-large" data-i18n="cta.button1">Start Your Free Trial</a>
+                    <a href="#" class="btn btn-primary btn-large" data-i18n="cta.button1">Join Beta — Free</a>
                     <a href="#" class="btn btn-outline btn-large" data-i18n="cta.button2">Schedule a Demo</a>
                 </div>
-                <p class="cta-note" data-i18n="cta.note">No credit card required • 14-day free trial • Cancel anytime</p>
+                <p class="cta-note" data-i18n="cta.note">No credit card required • Free for first 10 companies • Early Access Beta</p>
             </div>
         </div>
     </section>
